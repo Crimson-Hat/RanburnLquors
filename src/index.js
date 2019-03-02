@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Browser as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './index.css';
 import App from './components/App';
-import App from './components/Admin';
-import App from './components/Checkout';
-import App from './components/Featured';
-import App from './components/Signin';
-import App from './components/Signout';
-import App from './components/Store';
+import Admin from './components/Admin';
+import Checkout from './components/Checkout';
+import Featured from './components/Featured';
+import Signin from './components/Signin';
+import Signup from './components/Signup';
+import Store from './components/Store';
 
 
 
@@ -16,16 +16,16 @@ import App from './components/Store';
 import * as serviceWorker from './serviceWorker';
 
 
-Const Root = () => (
+const Root = () => (
   <Router>
     <Switch>
-      <route component={App} exact path ="/" />
-      <route component={Admin} exact path ="/admin" />
-      <route component={Checkout} exact path ="/checkout" />
-      <route component={Featured} exact path ="/featured" />
-      <route component={Signin} exact path ="/signin" />
-      <route component={Singout} exact path ="/signout" />
-      <route component={Store} exact path ="/store" />
+      <Route component={App} exact path ="/" />
+      <Route component={Admin} exact path ="/admin" />
+      <Route component={Checkout} exact path ="/checkout" />
+      <Route component={Featured} exact path ="/featured" />
+      <Route component={Signin} exact path ="/signin" />
+      <Route component={Signup} exact path ="/signup" />
+      <Route component={Store} exact path ="/store" />
     </Switch>
   </Router>
 )
@@ -42,3 +42,11 @@ ReactDOM.render(<Root />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+
+
+//hot reloading feature from webpack to update page without reloading page
+if (module.hot) {
+  module.hot.accept();
+}
