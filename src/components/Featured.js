@@ -23,6 +23,9 @@ class Featured extends React.Component {
           image = { featured.image }
           type = { featured.type }
           price = { featured.price }
+          size = { featured.size }
+          alc = { featured.alc }
+          was = { featured.was }
           />
           );
         })}
