@@ -15,20 +15,22 @@ class Admin extends React.Component {
       // <div>Admin</div>
       <div>
         <h1 className="title">Featured</h1>
-        {featuredList.map(featured => {
-          return (
-            <AdminTest
-              key={featured.id}
-              featuredId={featured.id}
-              name={featured.name}
-              image={featured.image}
-              type={featured.type}
-              price={featured.price}
-            />
-          );
-        })}
+        <div className="container-fluid mx-auto card-content">
+          <div className="row container-fluid">
+            {featuredList.map(featured => {
+              return (
+                <AdminTest
+                  key={featured.id}
+                  featuredId={featured.id}
+                  name={featured.name}
+                  image={featured.image}
+                  type={featured.type}
+                  price={featured.price} />
+              );
+            })}
+          </div>
+        </div>
       </div>
-
     );
   }
 }
