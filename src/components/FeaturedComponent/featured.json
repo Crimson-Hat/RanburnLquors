@@ -6,7 +6,7 @@
     "type": "Red Wine",
     "price": "$9.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$12.99"
   },
   {
@@ -16,7 +16,7 @@
     "type": "Red Wine",
     "price": "$9.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$12.99"
   },
   {
@@ -26,7 +26,7 @@
     "type": "White Wine",
     "price": "$9.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$12.99"
   },
   {
@@ -36,7 +36,7 @@
     "type": "White Wine",
     "price": "$16.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$21.99"
   },
   {
@@ -46,7 +46,7 @@
     "type": "Bourbon",
     "price": "$30.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$40.00"
   },
   {
@@ -56,7 +56,7 @@
     "type": "Bourbon",
     "price": "$34.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$42.99"
   },
   {
@@ -66,7 +66,7 @@
     "type": "Vodka",
     "price": "$24.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$29.99"
   },
   {
@@ -76,7 +76,7 @@
     "type": "Single Malt-Scotch",
     "price": "$63.99",
     "size": "750ml",
-    "alc": "20% alc./vol.",
+    "alc": "20%",
     "was": "$75.00"
   }
 ]
