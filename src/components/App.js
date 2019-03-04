@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Navbar from "./UniversalComponent/Navbar";
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-      <Navbar />
+        <h1>Hi</h1>
       </React.Fragment>
     );
   }
