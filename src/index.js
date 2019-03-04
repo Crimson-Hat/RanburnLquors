@@ -11,23 +11,31 @@ import Signup from './components/Signup';
 import Store from './components/Store';
 
 
+import NavBar from "./components/UniversalComponent/Navbar";
 
 
 import * as serviceWorker from './serviceWorker';
 
 
+
 const Root = () => (
-  <Router>
-    <Switch>
-      <Route component={App} exact path ="/" />
-      <Route component={Admin} exact path ="/admin" />
-      <Route component={Checkout} exact path ="/checkout" />
-      <Route component={Featured} exact path ="/featured" />
-      <Route component={Signin} exact path ="/signin" />
-      <Route component={Signup} exact path ="/signup" />
-      <Route component={Store} exact path ="/store" />
-    </Switch>
-  </Router>
+  <React.Fragment>
+    <div>
+      <NavBar />
+    </div>
+    
+    <Router>
+      <Switch>
+        <Route component={App} exact path="/" />
+        <Route component={Admin} exact path="/admin" />
+        <Route component={Checkout} exact path="/checkout" />
+        <Route component={Featured} exact path="/featured" />
+        <Route component={Signin} exact path="/signin" />
+        <Route component={Signup} exact path="/signup" />
+        <Route component={Store} exact path="/store" />
+      </Switch>
+    </Router>
+  </React.Fragment>
 )
 
 
