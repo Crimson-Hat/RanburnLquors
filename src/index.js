@@ -20,11 +20,10 @@ import * as serviceWorker from './serviceWorker';
 
 const Root = () => (
   <React.Fragment>
+    <Router>
     <div>
       <NavBar />
-    </div>
     
-    <Router>
       <Switch>
         <Route component={App} exact path="/" />
         <Route component={Admin} exact path="/admin" />
@@ -34,6 +33,7 @@ const Root = () => (
         <Route component={Signup} exact path="/signup" />
         <Route component={Store} exact path="/store" />
       </Switch>
+    </div>
     </Router>
   </React.Fragment>
 )
