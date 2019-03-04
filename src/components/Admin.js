@@ -11,23 +11,25 @@ class Admin extends React.Component {
     const { featuredList } = this.state;
     console.log(featured);
     return (
-      <React.Fragment>
-         <div>
-          <h1 className="title">Featured</h1>
-          {featuredList.map(featured => {
-            return (
-              <AdminTest
-                key={featured.id}
-                featuredId={featured.id}
-                name={featured.name}
-                image={featured.image}
-                type={featured.type}
-                price={featured.price}
-              />
-            );
-          })}
+      // <div>Admin</div>
+      <div>
+        <h1 className="title">Featured</h1>
+        <div className="container-fluid mx-auto card-content">
+          <div className="row container-fluid">
+            {featuredList.map(featured => {
+              return (
+                <AdminTest
+                  key={featured.id}
+                  featuredId={featured.id}
+                  name={featured.name}
+                  image={featured.image}
+                  type={featured.type}
+                  price={featured.price} />
+              );
+            })}
+          </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
