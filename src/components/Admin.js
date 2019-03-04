@@ -10,7 +10,6 @@ class Admin extends React.Component {
   render() {
     const { featuredList } = this.state;
     console.log(featured);
-
     return (
       // <div>Admin</div>
       <div>
