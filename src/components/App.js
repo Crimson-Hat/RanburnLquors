@@ -4,9 +4,9 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-       App
-      </div>
+      <React.Fragment>
+        <h1>Hi</h1>
+      </React.Fragment>
     );
   }
 }
