@@ -23,7 +23,7 @@ function FeaturedCard(props) {
               <div className="text-right font-weight-light text-danger"><del>{props.was}</del></div>
           <div className="row text-right">
             <div>
-              <div className="card-font-property3 text-right">{props.price}</div>
+              <div className="card-font-property3">{props.price}</div>
             </div>
           </div>
             </div>
