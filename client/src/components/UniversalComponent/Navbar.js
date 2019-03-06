@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <nav class="navbar">
-      <div className="row">
+      <div className="row container-fluid">
         <div className="col-3"></div>
         <div className="col-sm">
           <Link  to="/">
