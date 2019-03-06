@@ -2,17 +2,12 @@ import React from 'react';
 
 
 
-// class Admintestcomponent extends Component {
-//   render() {
-//     return (
-//       <div>Admintestcomponent</div>
-//     )
-//   }
-// }
-
 function AdminTest(props) {
   return (
     <div className="container-fluid">
+
+      <div className="card">
+      
       <form>
 
         <div className="form-group">
@@ -42,6 +37,8 @@ function AdminTest(props) {
         </select>
         </div>
       </form>
+      </div>
+
     </div>
   )
 }
