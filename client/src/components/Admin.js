@@ -8,7 +8,8 @@ import API from '../utils/API';
 
 class Admin extends React.Component {
   state = {
-    deals: []
+    deals: [],
+    chosenItem: ""
   };
 
   componentDidMount() {
@@ -22,7 +23,6 @@ class Admin extends React.Component {
 
   }
 
-
   render() {
 
     return (
@@ -35,7 +35,7 @@ class Admin extends React.Component {
             <div className="row container-fluid">
               <AdminSpiritsForm1 deals={this.state.deals} />
 
-              <AdminSpiritsForm2/>
+              <AdminSpiritsForm2 chosenItem={this.state.chosenItem}/>
 
               <AddItem />
 
