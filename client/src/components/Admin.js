@@ -11,33 +11,37 @@ class Admin extends React.Component {
   };
 
   componentDidMount() {
+    console.log('hi')
     API.getDeals().then(res => {
+      console.log('hi again')
       console.log(res.data);
-      this.setState({ deals: res.data})})
-    .catch(err => console.log(err));
-  
+      this.setState({ deals: res.data })
+    })
+      .catch(err => console.log(err));
+
   }
 
+
   render() {
-    
+
     return (
-       <React.Fragment>
+      <React.Fragment>
 
 
-      <div>
-        <h1 className="title">Admin Stuff</h1>
-        <div className="container-fluid mx-auto card-content">
-          <div className="row container-fluid">
-          <AdminSpiritsForm1/>
+        <div>
+          <h1 className="title">Admin Stuff</h1>
+          <div className="container-fluid mx-auto card-content">
+            <div className="row container-fluid">
+              <AdminSpiritsForm1 deals={this.state.deals} />
 
-          <AddItem/>
-            
+              <AddItem />
+
+            </div>
           </div>
         </div>
-      </div>
       </React.Fragment>
     );
-    
+
   }
 }
 
