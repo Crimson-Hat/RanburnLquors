@@ -2,20 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './index.css';
-import App from './components/App';
+import Home from './components/Home';
 import Admin from './components/Admin';
 import Checkout from './components/Checkout';
 import Featured from './components/Featured';
 import Signin from './components/Signin';
-import Signup from './components/Signup';
-import Store from './components/Store';
+import Wines from './components/Wines';
+import Spirits from './components/Spirits';
+import Beers  from './components/Beers';
 
 
 import NavBar from "./components/UniversalComponent/Navbar";
 
-
 import * as serviceWorker from './serviceWorker';
-
 
 
 const Root = () => (
@@ -25,13 +24,14 @@ const Root = () => (
       <NavBar />
     
       <Switch>
-        <Route component={App} exact path="/" />
+        <Route component={Home} exact path="/" />
         <Route component={Admin} exact path="/admin" />
         <Route component={Checkout} exact path="/checkout" />
         <Route component={Featured} exact path="/featured" />
         <Route component={Signin} exact path="/signin" />
-        <Route component={Signup} exact path="/signup" />
-        <Route component={Store} exact path="/store" />
+        <Route component={Wines} exact path="/wines" />
+        <Route component={Spirits} exact path="/spirits" />
+        <Route component={Beers} exact path="/beers" />
       </Switch>
     </div>
     </Router>
