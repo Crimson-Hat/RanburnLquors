@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function AdminTest() {
+function AdminTest(props) {
   return (
     <div className="container-fluid">
 
@@ -13,12 +13,8 @@ function AdminTest() {
           <div className="form-group">
             <label for="itemUpdate">What item would you like to update?</label>
             <select className="form-control" id="itemUpdate">
-              <option>Rampur</option>
-              <option>Clontarf</option>
-              <option>Amrut Fusion</option>
-              <option>Hine Rare VSOP</option>
-              <option>Mejor Tequila Pink</option>
-              <option>Tito's Handmade Vodka</option>
+              <option>{props.name}</option>
+              
             </select>
           </div>
 
