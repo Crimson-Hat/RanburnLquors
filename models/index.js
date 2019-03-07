@@ -1,3 +1,4 @@
 module.exports = {
-  Deals: require("./deals")
+  Deals: require("./deals"),
+  Spirits: require("./spirits")
 };
