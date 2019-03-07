@@ -9,10 +9,16 @@ export default {
   getSpirits: function () {
     return axios.get("/api/spirits")
   },
+
+  getSpirits: function(id) {
+    return axios.get("/api/spirits/" + id);
+  },
+
   //deletes the spirits with the given id
   deleteSpirits: function (id) {
     return axios.delete("/api/spirits/" + id)
   },
+
   //Saves a spirit to the database
   saveSpirits: function (spiritsData) {
     return axios.post("/api/spirits", spiritsData);
@@ -34,6 +40,7 @@ export default {
   // getDeals: function(id) {
   //   return axios.get("/api/deals/" + id);
   // },
+
   // Deletes the deal with the given id
   deleteDeals: function (id) {
     return axios.delete("/api/deals/" + id);
