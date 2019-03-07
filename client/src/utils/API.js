@@ -10,7 +10,7 @@ export default {
     return axios.get("/api/spirits")
   },
 
-  getSpirits: function(id) {
+  getSingleSpirit: function(id) {
     return axios.get("/api/spirits/" + id);
   },
 
