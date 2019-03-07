@@ -1,5 +1,6 @@
 import React from "react";
 import AdminSpiritsForm1 from "./AdminComponent/AdminSpiritsForm1";
+import AdminSpiritsForm2 from "./AdminComponent/AdminSpiritsForm2";
 // import featured from "./AdminComponent/featured.json";
 import AddItem from './AdminComponent/AdminCreateProduct/AddItemForm';
 // import spirits from "./AdminComponent/AdminCreateProduct/spirits.json";
@@ -12,7 +13,7 @@ class Admin extends React.Component {
 
   componentDidMount() {
     console.log('hi')
-    API.getDeals().then(res => {
+    API.getSpirits().then(res => {
       console.log('hi again')
       console.log(res.data);
       this.setState({ deals: res.data })
@@ -33,6 +34,8 @@ class Admin extends React.Component {
           <div className="container-fluid mx-auto card-content">
             <div className="row container-fluid">
               <AdminSpiritsForm1 deals={this.state.deals} />
+
+              <AdminSpiritsForm2/>
 
               <AddItem />
 

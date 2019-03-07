@@ -92,7 +92,7 @@ const dealsSeed = [
 ];
 const spiritsSeed = [
   {
-    "Product Name": "Rampur",
+    "ProductName": "Rampur",
     "Volume": "750",
     "Abv": "43",
     "Category": "Spirits",
@@ -103,7 +103,7 @@ const spiritsSeed = [
     "Description": "Rampur Distillery was the original name for Radico Khaitan, India's fourth largest spirits company. It has been making whisky for more than half a century, and started producing malted barley for its blends in 1990, but only launched its first single malt for export in 2016. This is a creamy and malty whisky with notes of vanilla, apricot and apple."
   },
   {
-    "Product Name": "Clontarf",
+    "ProductName": "Clontarf",
     "Volume": "1000",
     "Abv": "40",
     "Category": "Spirits",
@@ -114,7 +114,7 @@ const spiritsSeed = [
     "Description": "Ireland- Made with the finest grains and pure Irish spring water. It is triple distilled and aged in bourbon casks. Light toffee and vanilla fills the nose a pallet. Finishes round and slightly spicy."
   },
   {
-    "Product Name": "Amrut Fusion",
+    "ProductName": "Amrut Fusion",
     "Volume": "750",
     "Abv": "50",
     "Category": "Spirits",
@@ -125,7 +125,7 @@ const spiritsSeed = [
     "Description": "India- Rich, barley and fruit nose with citrus, spices, a creamy sweetness and a hint of peat. Palate is oaky, rich, with gentle peat, coffee and dark chocolate notes. Long, spicy sweet finish with a touch of citrus."
   },
   {
-    "Product Name": "Hine Rare VSOP",
+    "ProductName": "Hine Rare VSOP",
     "Volume": "750",
     "Abv": "40",
     "Category": "Spirits",
@@ -136,7 +136,7 @@ const spiritsSeed = [
     "Description": "Cognac, France- The most delicate of Hine's Cognacs, blended from grapes from the two finest regions. Displaying the expertise of the famed Hine Cellar Masters, this blend of over 25 Cognacs features fruity aromas on the bouquet and a long mellow taste on the finish."
   },
   {
-    "Product Name": "Mejor Tequila Pink",
+    "ProductName": "Mejor Tequila Pink",
     "Volume": "750",
     "Abv": "40",
     "Category": "Spirits",
@@ -147,7 +147,7 @@ const spiritsSeed = [
     "Description": "Mexico- Pink is fashioned to blend the modern luxury of Mejor tequila with the refined American cocktail culture. Pink can be enjoyed by all who appreciate the finest in spirits, from the most discriminating tequila connoisseur to the non-traditional tequila drinkers alike."
   },
   {
-    "Product Name": "Tito's Handmade Vodka",
+    "ProductName": "Tito's Handmade Vodka",
     "Volume": "750",
     "Abv": "40",
     "Category": "Spirits",
