@@ -1,5 +1,5 @@
 import React from 'react';
-
+import spirits from '../../../../../spirits.json'
 
 
 function AddItem() {
