@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <React.Fragment>
@@ -11,4 +10,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
