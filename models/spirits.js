@@ -10,7 +10,8 @@ const spiritsSchema = new Schema({
   SubType: { type: String, required: false },
   Country: { type: String, required: false },
   Price: { type: String, required: false },
-  Description: { type: String, required: false }
+  Description: { type: String, required: false },
+  ImgUrl:{ type: String, required: false }
 });
 
 const Spirits = mongoose.model("Spirits", spiritsSchema);
