@@ -1,35 +1,47 @@
 import React from "react";
-import AdminTest from "./AdminComponent/Admintestcomponent";
-import featured from "./AdminComponent/featured.json";
-
+import AdminSpiritsForm1 from "./AdminComponent/AdminSpiritsForm1";
+// import featured from "./AdminComponent/featured.json";
+import AddItem from './AdminComponent/AdminCreateProduct/AddItemForm';
+// import spirits from "./AdminComponent/AdminCreateProduct/spirits.json";
+import API from '../utils/API';
 
 class Admin extends React.Component {
   state = {
-    featuredList: featured
+    deals: []
   };
+
+  componentDidMount() {
+    console.log('hi')
+    API.getDeals().then(res => {
+      console.log('hi again')
+      console.log(res.data);
+      this.setState({ deals: res.data })
+    })
+      .catch(err => console.log(err));
+
+  }
+
+
   render() {
-    const { featuredList } = this.state;
-    console.log(featured);
+
     return (
-      <div>
-        <h1 className="title">Featured</h1>
-        <div className="container-fluid mx-auto card-content">
-          <div className="row container-fluid">
-            {featuredList.map(featured => {
-              return (
-                <AdminTest
-                  key={featured.id}
-                  featuredId={featured.id}
-                  name={featured.name}
-                  image={featured.image}
-                  type={featured.type}
-                  price={featured.price} />
-              );
-            })}
+      <React.Fragment>
+
+
+        <div>
+          <h1 className="title">Admin Stuff</h1>
+          <div className="container-fluid mx-auto card-content">
+            <div className="row container-fluid">
+              <AdminSpiritsForm1 deals={this.state.deals} />
+
+              <AddItem />
+
+            </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
+
   }
 }
 
