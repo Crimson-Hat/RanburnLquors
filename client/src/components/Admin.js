@@ -11,7 +11,6 @@ class Admin extends React.Component {
     const { featuredList } = this.state;
     console.log(featured);
     return (
-      // <div>Admin</div>
       <div>
         <h1 className="title">Featured</h1>
         <div className="container-fluid mx-auto card-content">
