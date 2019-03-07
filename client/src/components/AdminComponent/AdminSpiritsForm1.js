@@ -2,7 +2,8 @@ import React from 'react';
 
 
 
-function AdminTest() {
+function AdminSpiritsForm1(props) {
+  // console.log(props.deals);
   return (
     <div className="container-fluid">
 
@@ -13,12 +14,13 @@ function AdminTest() {
           <div className="form-group">
             <label for="itemUpdate">What item would you like to update?</label>
             <select className="form-control" id="itemUpdate">
-              <option>Rampur</option>
-              <option>Clontarf</option>
-              <option>Amrut Fusion</option>
-              <option>Hine Rare VSOP</option>
-              <option>Mejor Tequila Pink</option>
-              <option>Tito's Handmade Vodka</option>
+              {/* <option>{props.name}</option> */}
+              {!props.deals.length ? "" : props.deals.map(deal => {
+                return (
+                  <option key={deal._id} value={deal._id}>{deal.name}</option>
+                )
+              })}
+              
             </select>
           </div>
 
@@ -52,4 +54,4 @@ function AdminTest() {
 
 
 
-export default AdminTest;
+export default AdminSpiritsForm1;
