@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NavBar() {
 
   return (
-    <nav class="navbar">
+    <nav>
       <div className="row container-fluid">
         <div className="col-3"></div>
         <div className="col-sm">
