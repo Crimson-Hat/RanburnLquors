@@ -13,7 +13,7 @@ function AdminSpiritsForm1(props) {
 
           <div className="form-group">
             <label htmlFor="itemUpdate">What item would you like to update?</label>
-            <select className="form-control" id="itemUpdate">
+            <select name="itemname" onChange={props.handleInputChange} className="form-control" id="itemUpdate">
               {!props.deals.length ? "" : props.deals.map(deal => {
                 return (
                   <option key={deal._id} value={deal._id}>{deal.ProductName}</option>
@@ -22,7 +22,7 @@ function AdminSpiritsForm1(props) {
               
             </select>
 
-            <button className="btn-block my-2">Next</button>
+            
 
           </div>
 
