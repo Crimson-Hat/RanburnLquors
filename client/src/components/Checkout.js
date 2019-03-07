@@ -35,9 +35,7 @@ class Checkout extends React.Component {
 
         <h1>Trying to load data from Deals database</h1>
         <div>
-
-         
-
+        {JSON.stringify(this.state.deals, null, 2)}
         </div>
       </React.Fragment>
     )

@@ -2,7 +2,6 @@ const db = require("../models");
 
 module.exports = {
   findAll: function(req, res) {
-    console.log('this hit');
     db.Spirits
       .find()
       .then(dbModel => res.json(dbModel))
