@@ -246,49 +246,50 @@ const beersSeed = [
   }
 ]
 
-
 db.Spirits
   .remove({})
   .then(() => db.Spirits.collection.insertMany(spiritsSeed))
   .then(data => {
     console.log(data.result.n + " Spirits inserted!");
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
+    // process.exit(1);
   })
-
-  .then(db.Deals
+  .then(db.Beers
     .remove({})
-    .then(() => db.Deals.collection.insertMany(dealsSeed))
+    .then(() => db.Beers.collection.insertMany(beersSeed))
     .then(data => {
-      console.log(data.result.n + " Deals inserted!");
-      process.exit(0);
+      console.log(data.result.n + " Beers inserted!");
     }))
   .catch(err => {
     console.error(err);
-    process.exit(1);
-  });
+  })
+  .then(db.Wines
+    .remove({})
+    .then(() => db.Wines.collection.insertMany(winesSeed))
+    .then(data => {
+      console.log(data.result.n + " Wines inserted!");
+      process.exit(0);
+    })
+    .catch(err => {
+      console.error(err);
+      process.exit(1);
+    })
+  );
 
-  
-  // .then(db.Beers
+  // .then(db.Deals
   //   .remove({})
-  //   .then(() => db.Beers.collection.insertMany(beersSeed))
+  //   .then(() => db.Deals.collection.insertMany(dealsSeed))
   //   .then(data => {
-  //     console.log(data.result.n + " Beers inserted!");
-  //   }))
-  // .catch(err => {
-  //   console.error(err);
-  // })
-
-
-  // .then(db.Wines
-  //   .remove({})
-  //   .then(() => db.Wines.collection.insertMany(winesSeed)
-  //   )
-  //   .then(data => {
-  //     console.log(data.result.n + " Wines inserted!");
-  //     // console.log("goes into this function")
-  //   }))
+  //     console.log(data.result.n + " Deals inserted!");
+  //     process.exit(0);
+  //   })
   //   .catch(err => {
   //     console.error(err);
+  //     process.exit(1);
   //   })
+  // )
+
+
