@@ -9,7 +9,8 @@ import API from '../utils/API';
 class Admin extends React.Component {
   state = {
     deals: [],
-    chosenItem: {}
+    chosenItem: {},
+    value: {}
   };
 
   componentDidMount() {
@@ -33,6 +34,16 @@ class Admin extends React.Component {
     });
   }
 
+  handleYesOrNo = event => {
+    const {value} = event.target;
+
+    this.setState({
+      [value]: value
+    });
+
+    console.log(value);
+  }
+
   render() {
 
     return (
@@ -43,10 +54,11 @@ class Admin extends React.Component {
           <h1 className="title">Admin Stuff</h1>
           <div className="container-fluid mx-auto card-content">
             <div className="row container-fluid">
+            <div className="col-4">
               <AdminSpiritsForm1 handleInputChange={this.handleInputChange} deals={this.state.deals} />
 
               <AdminSpiritsForm2 chosenItem={this.state.chosenItem}/>
-
+              </div>
               {/* <AddItem /> */}
 
             </div>

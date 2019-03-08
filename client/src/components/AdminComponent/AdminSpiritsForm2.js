@@ -3,7 +3,7 @@ import React from 'react';
 function AdminSpiritsForm2(props) {
   return (
     <div className="container-fluid">
-      <div className="card col-4 mb-5">
+      <div className="card mb-5">
       <h3>_id: {JSON.stringify(props.chosenItem._id)}</h3>
         <form>
 

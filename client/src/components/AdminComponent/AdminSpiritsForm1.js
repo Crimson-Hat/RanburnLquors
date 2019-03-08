@@ -7,12 +7,12 @@ function AdminSpiritsForm1(props) {
   return (
     <div className="container-fluid">
 
-      <div className="card col-4 mb-5">
+      <div className="card mb-5">
 
         <form>
 
           <div className="form-group">
-            <label htmlFor="itemUpdate">What item would you like to update?</label>
+            <label htmlFor="itemUpdate">What Spirit would you like to update?</label>
             <select name="itemname" onChange={props.handleInputChange} className="form-control" id="itemUpdate">
               {!props.deals.length ? "" : props.deals.map(deal => {
                 return (
@@ -24,6 +24,16 @@ function AdminSpiritsForm1(props) {
 
             
 
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="addSpirit">Will this be a new Spirit? (Add a new Spirit)</label>
+            <select name="newSpirit"
+            //  onChange={props.handleYesOrNo}
+             >
+              <option>Yes</option>
+              <option>No</option>
+            </select>
           </div>
 
           {/* <div className="form-group">
