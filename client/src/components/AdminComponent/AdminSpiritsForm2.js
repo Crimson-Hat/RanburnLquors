@@ -1,10 +1,11 @@
 import React from 'react';
 
 function AdminSpiritsForm2(props) {
+  console.log(props);
   return (
     <div className="container-fluid">
       <div className="card mb-5">
-      <h3>_id: {JSON.stringify(props.chosenItem._id)}</h3>
+      <h3>{props.chosenItem._id ? (`_id: ${JSON.stringify(props.chosenItem._id)}`) : "Add a new item"}</h3>
         <form>
 
           <div className="form-group">

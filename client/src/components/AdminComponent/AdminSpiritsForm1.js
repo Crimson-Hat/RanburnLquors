@@ -14,6 +14,7 @@ function AdminSpiritsForm1(props) {
           <div className="form-group">
             <label htmlFor="itemUpdate">What Spirit would you like to update?</label>
             <select name="itemname" onChange={props.handleInputChange} className="form-control" id="itemUpdate">
+            <option value="Add a new item">Add a new item</option>
               {!props.deals.length ? "" : props.deals.map(deal => {
                 return (
                   <option key={deal._id} value={deal._id}>{deal.ProductName}</option>

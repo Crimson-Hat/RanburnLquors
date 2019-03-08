@@ -1,15 +1,20 @@
 import React from "react";
 import AdminSpiritsForm1 from "./AdminComponent/AdminSpiritsForm1";
 import AdminSpiritsForm2 from "./AdminComponent/AdminSpiritsForm2";
-// import featured from "./AdminComponent/featured.json";
-import AddItem from './AdminComponent/AdminCreateProduct/AddItemForm';
-// import spirits from "./AdminComponent/AdminCreateProduct/spirits.json";
 import API from '../utils/API';
 
 class Admin extends React.Component {
   state = {
     deals: [],
-    chosenItem: {},
+    chosenItem: {
+      _id: "",
+      ProductName: "",
+      Volume: "",
+      Abv: "",
+      Category: "",
+      Type: "",
+      SubType: ""
+    }
     // value: {}
   };
 
@@ -26,9 +31,22 @@ class Admin extends React.Component {
 
   // this gets fed into AdminSpiritsForm1 for the select dropdown
   handleDealSelect = event => {
-    const {name, value} = event.target;
+    const { name, value } = event.target;
+    let dealPicked = {};
+    if (value === "Add a new item") {
+      dealPicked = {
+        _id: "",
+        ProductName: "",
+        Volume: "",
+        Abv: "",
+        Category: "",
+        Type: "",
+        SubType: ""
+      }
+    } else {
+      dealPicked = this.state.deals.find(deal => deal._id === value);
+    }
 
-    const dealPicked = this.state.deals.find(deal => deal._id === value);
 
     this.setState({
       chosenItem: dealPicked
@@ -37,31 +55,27 @@ class Admin extends React.Component {
 
   // this gets fed into AdminSpiritsForm2 for the edit form inputs
   handleFormEditChange = event => {
-    const {name, value} = event.target;
 
-    // make a copy of chosenItem because we're going to update it
-    const chosenItem = {...this.state.chosenItem};
+    //check to see if the value of the first form is not on "Add a new item"
 
-    //update chosenItem's data
-    chosenItem[name] = value;
+      const { name, value } = event.target;
 
-    // update chosenItem in state
-    this.setState({chosenItem});
+      // make a copy of chosenItem because we're going to update it
+      const chosenItem = { ...this.state.chosenItem };
+
+      //update chosenItem's data
+      chosenItem[name] = value;
+
+      // update chosenItem in state
+      this.setState({ chosenItem });
+
+
+  
 
   }
 
-  // handleYesOrNo = event => {
-  //   const {value} = event.target;
 
-  //   this.setState({
-  //     [value]: value
-  //   });
 
-  //   console.log(value);
-  // }
-
-  // handleAddSpirit = () =>
-  
 
   render() {
 
@@ -73,10 +87,10 @@ class Admin extends React.Component {
           <h1 className="title">Admin Stuff</h1>
           <div className="container-fluid mx-auto card-content">
             <div className="row container-fluid">
-            <div className="col-4">
-              <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
+              <div className="col-4">
+                <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
 
-              <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange}/>
+                <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} />
               </div>
               {/* <AddItem /> */}
 
