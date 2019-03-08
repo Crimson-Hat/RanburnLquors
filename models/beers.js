@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const beersSchema = new Schema({
   BrandName: { type: String, required: true },
-  AvaibleSizes: { type: String, required: false },
+  AvailableSizes: { type: String, required: false },
   BeerStyle: { type: String, required: false },
   Abv: { type: String, required: false },
   Description: { type: String, required: false },
