@@ -41,7 +41,10 @@ class Admin extends React.Component {
         Abv: "",
         Category: "",
         Type: "",
-        SubType: ""
+        SubType: "",
+        Country: "",
+        Description: "",
+        ImgUrl: ""
       }
     } else {
       dealPicked = this.state.deals.find(deal => deal._id === value);
