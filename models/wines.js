@@ -10,6 +10,6 @@ const winesSchema = new Schema({
   ImgUrl:{ type: String, required: false }
 });
 
-const Wines = mongoose.model("wines", winesSchema);
+const Wines = mongoose.model("Wines", winesSchema);
 
 module.exports = Wines;

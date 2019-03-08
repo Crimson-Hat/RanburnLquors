@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
@@ -257,32 +256,39 @@ db.Spirits
   .catch(err => {
     console.error(err);
   })
-  .then(db.Wines
+
+  .then(db.Deals
     .remove({})
-    .then(() => db.Wines.collection.insertMany(winesSeed))
+    .then(() => db.Deals.collection.insertMany(dealsSeed))
     .then(data => {
-      console.log(data.result.n + " Wines inserted!");
+      console.log(data.result.n + " Deals inserted!");
+      process.exit(0);
     }))
-    .catch(err => {
-      console.error(err);
-    })
-    .then(db.Beers
-      .remove({})
-      .then(() => db.Beers.collection.insertMany(beersSeed))
-      .then(data => {
-        console.log(data.result.n + " Beers inserted!");
-      }))
-      .catch(err => {
-        console.error(err);
-      })
-      .then(db.Deals
-        .remove({})
-        .then(() => db.Deals.collection.insertMany(dealsSeed))
-        .then(data => {
-          console.log(data.result.n + " deals inserted!");
-          process.exit(0);
-          }))
-          .catch(err => {
-        console.error(err);
-        process.exit(1);
-       });
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  
+  // .then(db.Beers
+  //   .remove({})
+  //   .then(() => db.Beers.collection.insertMany(beersSeed))
+  //   .then(data => {
+  //     console.log(data.result.n + " Beers inserted!");
+  //   }))
+  // .catch(err => {
+  //   console.error(err);
+  // })
+
+
+  // .then(db.Wines
+  //   .remove({})
+  //   .then(() => db.Wines.collection.insertMany(winesSeed)
+  //   )
+  //   .then(data => {
+  //     console.log(data.result.n + " Wines inserted!");
+  //     // console.log("goes into this function")
+  //   }))
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
