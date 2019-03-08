@@ -10,7 +10,7 @@ class Admin extends React.Component {
   state = {
     deals: [],
     chosenItem: {},
-    value: {}
+    // value: {}
   };
 
   componentDidMount() {
@@ -34,15 +34,18 @@ class Admin extends React.Component {
     });
   }
 
-  handleYesOrNo = event => {
-    const {value} = event.target;
+  // handleYesOrNo = event => {
+  //   const {value} = event.target;
 
-    this.setState({
-      [value]: value
-    });
+  //   this.setState({
+  //     [value]: value
+  //   });
 
-    console.log(value);
-  }
+  //   console.log(value);
+  // }
+
+  // handleAddSpirit = () =>
+  
 
   render() {
 
