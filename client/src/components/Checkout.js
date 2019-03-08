@@ -15,6 +15,17 @@ class Checkout extends React.Component {
       .catch(err => console.log(err));
 
 
+      API.getBeers().then(res => {
+        console.log(res.data);
+        this.setState({ beers: res.data })
+      })
+        .catch(err => console.log(err));
+
+        API.getWines().then(res => {
+          console.log(res.data);
+          this.setState({ wines: res.data })
+        })
+          .catch(err => console.log(err));
 
 
     API.getDeals().then(res => {
@@ -30,6 +41,16 @@ class Checkout extends React.Component {
         <h1>Trying to load data from Spirits database</h1>
         <div>
            {JSON.stringify(this.state.spirits, null, 2)}
+        </div>
+
+        <h1>Trying to load data from Beers database</h1>
+        <div>
+           {JSON.stringify(this.state.beers, null, 2)}
+        </div>
+
+        <h1>Trying to load data from Wines database</h1>
+        <div>
+           {JSON.stringify(this.state.wines, null, 2)}
         </div>
 
 
