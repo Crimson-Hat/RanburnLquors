@@ -279,10 +279,10 @@ db.Spirits
         .remove({})
         .then(() => db.Deals.collection.insertMany(dealsSeed))
         .then(data => {
-          console.log(data.result.n + " records inserted!");
+          console.log(data.result.n + " deals inserted!");
           process.exit(0);
           }))
           .catch(err => {
         console.error(err);
         process.exit(1);
-       })
+       });
