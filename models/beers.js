@@ -2,11 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const beersSchema = new Schema({
-  FamilyName: { type: String, required: true },
-  Month: { type: String, required: false },
-  Country: { type: String, required: false },
-  Size: { type: String, required: false },
-  Types: { type: String, required: false },
+  BrandName: { type: String, required: true },
+  AvaibleSizes: { type: String, required: false },
+  BeerStyle: { type: String, required: false },
+  Abv: { type: String, required: false },
   Description: { type: String, required: false },
   ImgUrl:{ type: String, required: false }
 });
