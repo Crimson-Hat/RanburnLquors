@@ -47,7 +47,7 @@ function AdminSpiritsForm2(props) {
 
           <div className="form-group">
             <label htmlFor="SubTypeUpdate">SubType:</label>
-            <textarea className="form-control" id="SubTypeUpdate" rows="1" value={props.chosenItem.Type}  name="Type"
+            <textarea className="form-control" id="SubTypeUpdate" rows="1" value={props.chosenItem.SubType}  name="SubType"
               onChange={props.handleInputChange}></textarea>
           </div>
 

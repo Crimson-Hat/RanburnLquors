@@ -90,12 +90,15 @@ class Admin extends React.Component {
           <h1 className="title">Admin Stuff</h1>
           <div className="container-fluid mx-auto card-content">
             <div className="row container-fluid">
-              <div className="col-4">
+              <div className="col-5">
                 <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
+                <h1>Add the preview card below here</h1>
+              </div>
 
+              <div className="col-5">
                 <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} />
               </div>
-              {/* <AddItem /> */}
+              
 
             </div>
           </div>
