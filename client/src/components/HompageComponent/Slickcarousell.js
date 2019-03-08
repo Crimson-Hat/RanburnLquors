@@ -31,7 +31,7 @@ export default class SimpleSlider extends Component {
             <img className="d-block text-center w-100" src={One} alt="First slide" />
           </div>
           <div>
-            <img className="d-block w-100" src={Two} alt="Second slide" />
+            <img className="d-block w-100g" src={Two} alt="Second slide" />
           </div>
           <div>
             <img className="d-block w-100" src={Three} alt="Third slide" />
