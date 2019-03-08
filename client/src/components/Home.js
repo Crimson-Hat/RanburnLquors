@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Carousel from './HompageComponent/Carousel';
-
+import SimpleSlider from './HompageComponent/Slickcarousell';
 
 class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <Carousel/>
+        <SimpleSlider/>
+
 
         <h1>Hi</h1>
       </React.Fragment>
