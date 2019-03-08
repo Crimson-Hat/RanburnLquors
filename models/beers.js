@@ -10,6 +10,6 @@ const beersSchema = new Schema({
   ImgUrl:{ type: String, required: false }
 });
 
-const beers = mongoose.model("beers", beersSchema);
+const Beers = mongoose.model("Beers", beersSchema);
 
-module.exports = beers;
+module.exports = Beers;
