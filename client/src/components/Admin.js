@@ -14,7 +14,11 @@ class Admin extends React.Component {
       Category: "",
       Type: "",
       SubType: ""
-    }
+    },
+    add: 0,
+    update: 0,
+    delete: 0
+    
     // value: {}
   };
 
@@ -59,8 +63,6 @@ class Admin extends React.Component {
   // this gets fed into AdminSpiritsForm2 for the edit form inputs
   handleFormEditChange = event => {
 
-    //check to see if the value of the first form is not on "Add a new item"
-
       const { name, value } = event.target;
 
       // make a copy of chosenItem because we're going to update it
@@ -72,9 +74,30 @@ class Admin extends React.Component {
       // update chosenItem in state
       this.setState({ chosenItem });
 
+  }
 
-  
+  handleDatabaseUpdate = event => {
 
+    const { name, value } = event.target;
+
+    const chosenItem = { ...this.state.chosenItem };
+
+    //if add (in state) is true, then hit the POST route to add an item
+    if (this.state.add === 1) {
+      addNewSpirit(chosenItem);
+    }
+
+    // if update (in state) is true, then hit the PUT route to update an item
+    if (this.state.update === 1) {
+      saveSpirits(chosenItem);
+    }
+
+    // if delete (in state) is true, then hit the DELETE route to delete the item from the db
+    if (this.state.delete === 1) {
+      deleteSpirits(chosenItem);
+    }
+
+    
   }
 
 

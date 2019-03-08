@@ -72,6 +72,10 @@ function AdminSpiritsForm2(props) {
             onChange={props.handleInputChange}></textarea>
           </div>
 
+          <button className="btn-block"
+           onClick={this.handleDatabaseUpdate}
+           >Update the database</button>
+
         </form>
       </div>
     </div>
