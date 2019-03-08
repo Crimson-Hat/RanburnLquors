@@ -1,11 +1,13 @@
 import React from "react";
 import AdminSpiritsForm1 from "./AdminComponent/AdminSpiritsForm1";
 import AdminSpiritsForm2 from "./AdminComponent/AdminSpiritsForm2";
+import AdminWinesForm1 from "./AdminComponent/AdminWinesForm1";
 import API from '../utils/API';
 
 class Admin extends React.Component {
   state = {
     deals: [],
+    wines: [],
     chosenItem: {
       _id: "",
       ProductName: "",
@@ -21,14 +23,21 @@ class Admin extends React.Component {
   };
 
   componentDidMount() {
-    console.log('hi')
+    console.log('hi');
     API.getSpirits().then(res => {
-      console.log('hi again')
+      console.log('hi again');
       console.log(res.data);
       this.setState({ deals: res.data })
     })
       .catch(err => console.log(err));
 
+    console.log('hi wine');
+    API.getWines().then(res => {
+      console.log("hi wine again");
+      console.log(res.data);
+      this.setState({ wines: res.data })
+    })
+      .catch(err => console.log(err));
   }
 
   // this gets fed into AdminSpiritsForm1 for the select dropdown
@@ -58,6 +67,31 @@ class Admin extends React.Component {
     this.setState({
       chosenItem: dealPicked,
       formType: formType
+    });
+  }
+
+  handleWineSelect = event => {
+    const { name, value } = event.target;
+    let formTypeWines = "add";
+    let winePicked = {};
+    if (value === "Add a new item") {
+      winePicked = {
+        _id: "",
+        FamilyName: "",
+        Country: "",
+        Size: "",
+        Types: "",
+        Description: "",
+        ImgUrl: ""
+      }
+    } else {
+      winePicked = this.state.wines.find(wine => wine._id === value);
+      formTypeWines = "edit"
+    }
+
+    this.setState({
+      chosenWine: winePicked,
+      formTypeWines: formTypeWines
     });
   }
 
@@ -152,6 +186,17 @@ class Admin extends React.Component {
               
 
             </div>
+
+            <div className="row container-fluid">
+              <div className="col-5">
+                <AdminWinesForm1 handleInputChange2={this.handleWineSelect} wines={this.state.wines} />
+                <h1>Add the preview wine card below here</h1>
+              </div>
+
+              {/* ADD THE ADMINWINESFORM2 STUFF HERE */}
+
+            </div>
+
           </div>
         </div>
       </React.Fragment>
