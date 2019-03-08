@@ -1,7 +1,6 @@
 import React from 'react';
 
 function AdminSpiritsForm2(props) {
-  console.log(props);
   return (
     <div className="container-fluid">
       <div className="card mb-5">
@@ -71,6 +70,13 @@ function AdminSpiritsForm2(props) {
             value={!props.chosenItem.ImgUrl ? "" : props.chosenItem.ImgUrl} name="ImgUrl"
             onChange={props.handleInputChange}></textarea>
           </div>
+
+          <button className="btn-block"
+           onClick={props.handleDatabaseUpdate}
+           >Update the database</button>
+
+           <button className="btn-block"
+           onClick={props.handleDatabaseDelete}>Delete item from the database</button>
 
         </form>
       </div>

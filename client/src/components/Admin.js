@@ -14,7 +14,9 @@ class Admin extends React.Component {
       Category: "",
       Type: "",
       SubType: ""
-    }
+    },
+    formType: "add"
+    
     // value: {}
   };
 
@@ -32,6 +34,7 @@ class Admin extends React.Component {
   // this gets fed into AdminSpiritsForm1 for the select dropdown
   handleDealSelect = event => {
     const { name, value } = event.target;
+    let formType = "add";
     let dealPicked = {};
     if (value === "Add a new item") {
       dealPicked = {
@@ -48,18 +51,18 @@ class Admin extends React.Component {
       }
     } else {
       dealPicked = this.state.deals.find(deal => deal._id === value);
+      formType = "edit"
     }
 
 
     this.setState({
-      chosenItem: dealPicked
+      chosenItem: dealPicked,
+      formType: formType
     });
   }
 
   // this gets fed into AdminSpiritsForm2 for the edit form inputs
   handleFormEditChange = event => {
-
-    //check to see if the value of the first form is not on "Add a new item"
 
       const { name, value } = event.target;
 
@@ -72,10 +75,58 @@ class Admin extends React.Component {
       // update chosenItem in state
       this.setState({ chosenItem });
 
+  }
 
-  
+  handleDatabaseUpdate = event => {
+    event.preventDefault();
+
+    const chosenItem = { ...this.state.chosenItem };
+
+    //if add (in state) is true, then hit the POST route to add an item
+    if (this.state.formType === "add") {
+      delete chosenItem._id;
+
+      API.addNewSpirit(chosenItem)
+        .then(res => {
+          // console.log(res.data);
+          const r0 = res.data;
+          // do something with data here
+        })
+        .catch(err => console.log(err));
+    }
+
+    // if update (in state) is true, then hit the PUT route to update an item
+    if (this.state.formType === "edit") {
+      API.saveSpirits(chosenItem, chosenItem._id)
+      .then(res => {
+        // console.log(res.data);
+        const r1 = res.data;
+        // do something with data here
+      })
+      .catch(err => console.log(err));
+    }
+    
+  }
+
+  handleDatabaseDelete = event => {
+    event.preventDefault();
+
+    const chosenItem = { ...this.state.chosenItem };
+    // if delete (in state) is true, then hit the DELETE route to delete the item from the db
+    // if (this.state.formType === "edit") {
+      API.deleteSpirits(chosenItem._id)
+      .then(res => {
+        // console.log(res.data);
+        const r2 = res.data;
+        // do something with data here
+      })
+      .catch(err => console.log(err));
+      
+    // }
 
   }
+
+    
 
 
 
@@ -96,7 +147,7 @@ class Admin extends React.Component {
               </div>
 
               <div className="col-5">
-                <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} />
+                <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} handleDatabaseUpdate={this.handleDatabaseUpdate} handleDatabaseDelete={this.handleDatabaseDelete} />
               </div>
               
 
