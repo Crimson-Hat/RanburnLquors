@@ -10,7 +10,7 @@ export default {
     return axios.get("/api/spirits")
   },
 
-  getSingleSpirit: function(id) {
+  getSingleSpirit: function (id) {
     return axios.get("/api/spirits/" + id);
   },
 
@@ -27,6 +27,55 @@ export default {
   //-------------------Spirits Methods----------------------------------------
   //-------------------Spirits Methods----------------------------------------
 
+  //-------------------Beers Methods----------------------------------------
+  //-------------------Beers Methods----------------------------------------
+
+
+  //Get all beers
+  getBeers: function () {
+    return axios.get("/api/beers")
+  },
+
+  getSingleBeer: function (id) {
+    return axios.get("/api/beers/" + id);
+  },
+
+  //deletes the beer with the given id
+  deletebeers: function (id) {
+    return axios.delete("/api/beers/" + id)
+  },
+
+  //Saves a beer to the database
+  saveBeers: function (beersData) {
+    return axios.post("/api/beer", beersData);
+  },
+
+  //-------------------Beers Methods----------------------------------------
+  //-------------------Beers Methods----------------------------------------
+
+
+  //-------------------Wines Methods----------------------------------------
+  //-------------------Wines Methods----------------------------------------
+ //Get all wines
+ getWines: function () {
+  return axios.get("/api/wines")
+},
+
+getSingleWines: function (id) {
+  return axios.get("/api/wines/" + id);
+},
+
+//deletes the wine with the given id
+deleteWines: function (id) {
+  return axios.delete("/api/wines/" + id)
+},
+
+//Saves a wine to the database
+saveWines: function (winesData) {
+  return axios.post("/api/wines", winesData);
+},
+  //-------------------Wines Methods----------------------------------------
+  //-------------------Wines Methods----------------------------------------
 
   //-------------------Deals Methods----------------------------------------
   //-------------------Deals Methods----------------------------------------
