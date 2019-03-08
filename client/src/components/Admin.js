@@ -24,7 +24,8 @@ class Admin extends React.Component {
 
   }
 
-  handleInputChange = event => {
+  // this gets fed into AdminSpiritsForm1 for the select dropdown
+  handleDealSelect = event => {
     const {name, value} = event.target;
 
     const dealPicked = this.state.deals.find(deal => deal._id === value);
@@ -32,6 +33,21 @@ class Admin extends React.Component {
     this.setState({
       chosenItem: dealPicked
     });
+  }
+
+  // this gets fed into AdminSpiritsForm2 for the edit form inputs
+  handleFormEditChange = event => {
+    const {name, value} = event.target;
+
+    // make a copy of chosenItem because we're going to update it
+    const chosenItem = {...this.state.chosenItem};
+
+    //update chosenItem's data
+    chosenItem[name] = value;
+
+    // update chosenItem in state
+    this.setState({chosenItem});
+
   }
 
   // handleYesOrNo = event => {
@@ -58,9 +74,9 @@ class Admin extends React.Component {
           <div className="container-fluid mx-auto card-content">
             <div className="row container-fluid">
             <div className="col-4">
-              <AdminSpiritsForm1 handleInputChange={this.handleInputChange} deals={this.state.deals} />
+              <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
 
-              <AdminSpiritsForm2 chosenItem={this.state.chosenItem}/>
+              <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange}/>
               </div>
               {/* <AddItem /> */}
 

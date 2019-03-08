@@ -26,15 +26,7 @@ function AdminSpiritsForm1(props) {
 
           </div>
 
-          <div className="form-group">
-            <label htmlFor="addSpirit">Will this be a new Spirit? (Add a new Spirit)</label>
-            <select name="newSpirit"
-            //  onChange={props.handleYesOrNo}
-             >
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
+         
 
           {/* <div className="form-group">
             <label for="typeOfUpdate">How would you like to update this item?</label>
