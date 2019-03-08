@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
@@ -158,26 +157,139 @@ const spiritsSeed = [
     "Description": "USA- Designed to be savored by spirit connoisseurs. Micro-distilled in an old-fashioned pot still to provide more control over the distillation process and resulting in a spectacularly clean product. Only the heart of the run is taken, leaving behind residual higher and lower alcohols."
   }
 ]
+const winesSeed = [
+  {
+    "FamilyName": "Collier Creek",
+    "Country": "USA",
+    "Size": "750 ml",
+    "Types": "Cabernet Sauvignon, Pinot Noir, Zinfandel Chardonnay",
+    "Description": "Collier Creek is really more of a state of mind, a paddle away from memory lane, and just around the creek bend from the past - A time when farmland ran as far as the eye could see. Nestled between the gold country of the Sierra Foothills and the San Francisco Delta waters lie the heart of the Lodi Appellation, where these fine wines are grown and produced.",
+    "ImgUrl": ""
+  },
+  {
+    "FamilyName": "Papi",
+    "Country": "Chile",
+    "Size": "750ml or 1.5 L",
+    "Types": "Cabernet Sauvignon, Merlot, Pinot Noir",
+    "Description": "Fine Chilean wines start with the finest Chilean grapes, and that’s why we choose only those from the most renowned grape growing region of Central Valley. Our renowned wines are the result of the perfect balance, character, and complexity due to our famous tradition and knowledge in the art of winemaking.",
+    "ImgUrl": ""
+  },
+  {
+    "FamilyName": "Josh",
+    "Country": "USA",
+    "Size": "750ml",
+    "Types": "Cabernet Sauvignon, Melot",
+    "Description": "",
+    "ImgUrl": ""
+  },
+  {
+    "FamilyName": "Zensa",
+    "Country": "Italy",
+    "Size": "750ml",
+    "Types": "Pinot Grigio, Primitivo, Sparkling wine",
+    "Description": "",
+    "ImgUrl": ""
+  },
+  {
+    "FamilyName": "Veuve du Vernay Brut",
+    "Country": "France",
+    "Size": "750ml",
+    "Types": "Sparkling Wine",
+    "Description": "",
+    "ImgUrl": ""
+  }
+]
+const beersSeed = [
+  {
+    "MonthTitle": "March",
+    "MonthSubTitle": ""
+  },
+  {
+    "BrandName": "Harpoon The Craic",
+    "AvaibleSizes": "12oz 6pk Bottles",
+    "BeerStyle": "Irish Red IPA",
+    "Abv": "6.9",
+    "Description": "This hybrid ale combines two classic styles —IPA and Irish Red Ale—to create a unique and flavorful beer. Th­e malt combination commonly used in Irish Red Ales brings a toasted, malty flavor that balances the citrusy and fruity character of the hops.",
+    "ImgUrl": ""
+  },
+  {
+    "BrandName": "Guinness Draught",
+    "AvaibleSizes": "15oz 4pk cans and 11oz 6pk Bottles",
+    "BeerStyle": "Stout",
+    "Abv": "4.2",
+    "Description": "Ireland- Irish Dry Stout- Pours to a beautiful brown color with a creamy tan head. Smooth roasted malt and coffee flavors are balanced by some hopping, and the mouthfeel is as silky as you could ask for. Only 125 calories per 12 ounce serving.",
+    "ImgUrl": ""
+  },
+  {
+    "BrandName": "Guinness Foreign Extra Stout",
+    "AvaibleSizes": "12oz 4pk Bottles",
+    "BeerStyle": "Stout",
+    "Abv": "7.5",
+    "Description": "Ireland- Foreign / Export Stout- 7.5% ABV. Black color with ruby highlights. Aromas of toffee, toasted malts and dark fruit. The full body delivers a hoppier taste than regular Guinness and a roasted barley bitterness. Dark fruit character. Heavy mouthfeel. Dry and nutty in the finish.",
+    "ImgUrl": ""
+  },
+  {
+    "BrandName": "Guinness Extra Stout",
+    "AvaibleSizes": "11oz 6pk Bottles",
+    "BeerStyle": "Stout",
+    "Abv": "5",
+    "Description": "Ireland- Irish Dry Stout- This beer icon is pitch black in color with roasted malt aromas. It has a rich, creamy mouth feel without being too heavy. The hops provide a nice balance to the malts, allowing a slight sweetness to show on the finish.",
+    "ImgUrl": ""
+  },
+  {
+    "BrandName": "Smithwick's Irish Ale",
+    "AvaibleSizes": "11oz 6pk Bottles",
+    "BeerStyle": "Irish Red Ale",
+    "Abv": "4.5",
+    "Description": "Ireland- Irish Red Ale- Smithwick's Irish Ale is a copper colored ale with a thick, pillowy head. The aroma is sweet with malty caramel notes. It has a very clean taste with great hop flavors.",
+    "ImgUrl": ""
+  }
+]
+
 db.Spirits
   .remove({})
   .then(() => db.Spirits.collection.insertMany(spiritsSeed))
-    .then(data => {
-      console.log(data.result.n + " spirits inserted!");
-      // process.exit(0);
-    })
+  .then(data => {
+    console.log(data.result.n + " Spirits inserted!");
+    // process.exit(0);
+  })
   .catch(err => {
     console.error(err);
     // process.exit(1);
-  }).
-    then(db.Deals
-      .remove({})
-      .then(() => db.Deals.collection.insertMany(dealsSeed))
-      .then(data => {
-        console.log(data.result.n + " records inserted!");
-        process.exit(0);
-      })
-      .catch(err => {
-        console.error(err);
-        process.exit(1);
-      })
-    )
+  })
+  .then(db.Beers
+    .remove({})
+    .then(() => db.Beers.collection.insertMany(beersSeed))
+    .then(data => {
+      console.log(data.result.n + " Beers inserted!");
+    }))
+  .catch(err => {
+    console.error(err);
+  })
+  .then(db.Wines
+    .remove({})
+    .then(() => db.Wines.collection.insertMany(winesSeed))
+    .then(data => {
+      console.log(data.result.n + " Wines inserted!");
+      process.exit(0);
+    })
+    .catch(err => {
+      console.error(err);
+      process.exit(1);
+    })
+  );
+
+  // .then(db.Deals
+  //   .remove({})
+  //   .then(() => db.Deals.collection.insertMany(dealsSeed))
+  //   .then(data => {
+  //     console.log(data.result.n + " Deals inserted!");
+  //     process.exit(0);
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //     process.exit(1);
+  //   })
+  // )
+
+
