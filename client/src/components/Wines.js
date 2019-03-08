@@ -36,6 +36,7 @@ class Wines extends React.Component {
                     ImgUrl={wines.ImgUrl}
                     Types={wines.Types}
                     Size={wines.Size}
+                    Description={wines.Description}
                   />
                 </div>
               )

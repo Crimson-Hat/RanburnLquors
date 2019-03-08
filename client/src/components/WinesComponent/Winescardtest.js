@@ -14,9 +14,9 @@ class Winescardtest extends React.Component {
         flipOnClick={true} // default false
         flipDirection="horizontal" // horizontal or vertical
         ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
-      // if you pass isFlipped prop component will be controlled component.
-      // and other props, which will go to div
-      style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
+        // if you pass isFlipped prop component will be controlled component.
+        // and other props, which will go to div
+        style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
       >
 
         <FrontSide className="col-12" style={{ backgroundColor: '#41669d' }}>
@@ -45,7 +45,19 @@ class Winescardtest extends React.Component {
 
         </FrontSide>
         <BackSide style={{ backgroundColor: '#175852' }}>
-
+          <div>
+            <div>
+              <div className="card mx-auto">
+                <div className="card-body">
+                  <h4 className="card-title text-center">{this.props.FamilyName}
+                  </h4>
+                  <div className="row">
+                    {this.props.Description}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
