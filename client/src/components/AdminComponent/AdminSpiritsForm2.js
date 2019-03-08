@@ -1,7 +1,6 @@
 import React from 'react';
 
 function AdminSpiritsForm2(props) {
-  console.log(props);
   return (
     <div className="container-fluid">
       <div className="card mb-5">
@@ -73,8 +72,11 @@ function AdminSpiritsForm2(props) {
           </div>
 
           <button className="btn-block"
-           onClick={this.handleDatabaseUpdate}
+           onClick={props.handleDatabaseUpdate}
            >Update the database</button>
+
+           <button className="btn-block"
+           onClick={props.handleDatabaseDelete}>Delete item from the database</button>
 
         </form>
       </div>

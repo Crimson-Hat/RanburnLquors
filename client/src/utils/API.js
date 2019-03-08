@@ -20,12 +20,14 @@ export default {
   },
 
   //Saves a spirit to the database
-  saveSpirits: function (spiritsData) {
-    return axios.put("/api/spirits", spiritsData);
+  saveSpirits: function (spiritsData, id) {
+    console.log(spiritsData);
+    return axios.put("/api/spirits/" + id, spiritsData);
   },
 
 
   addNewSpirit: function (spiritsData) {
+    console.log(spiritsData);
     return axios.post("/api/spirits", spiritsData);
   },
 
