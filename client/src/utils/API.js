@@ -53,13 +53,13 @@ export default {
   },
 
   //Saves a beer to the database
-  saveBeers: function (beersData) {
-    return axios.put("/api/beer", beersData);
+  saveBeers: function (beersData, id) {
+    return axios.put("/api/beers/" + id, beersData);
   },
 
   //adds a newbeer to the database
   addNewBeer: function (beersData) {
-    return axios.post("/api/beer", beersData);
+    return axios.post("/api/beers", beersData);
   },
   //-------------------Beers Methods----------------------------------------
   //-------------------Beers Methods----------------------------------------
@@ -82,8 +82,8 @@ deleteWines: function (id) {
 },
 
 //Saves a wine to the database
-saveWines: function (winesData) {
-  return axios.put("/api/wines", winesData);
+saveWines: function (winesData, id) {
+  return axios.put("/api/wines/" + id, winesData);
 },
 
 //adds a new wine to the database
