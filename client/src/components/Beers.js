@@ -1,11 +1,11 @@
 import React from "react";
 
-class Wines extends React.Component {
+class Beers extends React.Component {
   render() {
     return (
-      <div>Wines</div>
+      <div>Beers</div>
     )
   }
 }
 
-export default Wines;
+export default Beers;
