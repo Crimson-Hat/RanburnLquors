@@ -21,6 +21,11 @@ export default {
 
   //Saves a spirit to the database
   saveSpirits: function (spiritsData) {
+    return axios.put("/api/spirits", spiritsData);
+  },
+
+
+  addNewSpirit: function (spiritsData) {
     return axios.post("/api/spirits", spiritsData);
   },
 
@@ -47,9 +52,13 @@ export default {
 
   //Saves a beer to the database
   saveBeers: function (beersData) {
-    return axios.post("/api/beer", beersData);
+    return axios.put("/api/beer", beersData);
   },
 
+  //adds a newbeer to the database
+  addNewBeer: function (beersData) {
+    return axios.post("/api/beer", beersData);
+  },
   //-------------------Beers Methods----------------------------------------
   //-------------------Beers Methods----------------------------------------
 
@@ -72,6 +81,11 @@ deleteWines: function (id) {
 
 //Saves a wine to the database
 saveWines: function (winesData) {
+  return axios.put("/api/wines", winesData);
+},
+
+//adds a new wine to the database
+addNewWine: function (winesData) {
   return axios.post("/api/wines", winesData);
 },
   //-------------------Wines Methods----------------------------------------
