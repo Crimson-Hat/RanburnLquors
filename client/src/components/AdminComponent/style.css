@@ -11,6 +11,14 @@
   opacity: 1;
 }
 
+.title-row {
+  background-color: #5e1715;
+}
+
+.form-title-h3 {
+  color: white;
+}
+
 .headingbar {
   background-color:  #5e1715;
   color: white;
@@ -23,6 +31,3 @@
   /* opacity: .5; */
 }
 
-      .adminBackground > .form-control {
-        opacity: .93;
-      }

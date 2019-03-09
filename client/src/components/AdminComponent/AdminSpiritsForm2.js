@@ -1,13 +1,16 @@
 import React from 'react';
+import './style.css';
 
 function AdminSpiritsForm2(props) {
   return (
     <div className="container-fluid">
       <div className="card mb-5 adminCard">
-        <h3>{props.chosenItem._id ? (`_id: ${JSON.stringify(props.chosenItem._id)}`) : "Add a new item"}</h3>
+      <div className="title-row">
+        <h3 className="form-title-h3 text-center">{props.chosenItem._id ? (`_id: ${JSON.stringify(props.chosenItem._id)}`) : "Add a new item"}</h3>
+      </div>
         <form>
 
-          <div className="form-group row">
+          <div className="form-group row mt-2">
             <label htmlFor="nameUpdate" className="col-3">Name of item:</label>
             <div className="col-9">
 
