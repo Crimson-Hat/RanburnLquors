@@ -1,0 +1,21 @@
+/* .carouseloutterdiv{
+  height: 1000vh;
+} */
+.slick-track {
+  display: flex !important;
+  /* height: 35vh; */
+}
+
+
+
+
+.slick-slide {
+  background-size: cover;
+  height: inherit !important;
+}
+
+.imagefix{
+  background-size: cover;
+  height: inherit !important;
+}
+

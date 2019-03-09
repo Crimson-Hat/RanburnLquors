@@ -5,10 +5,11 @@
 }
 
 .navcss {
-  background-color: white;
+  background-color: whitesmoke;
   color: #5e1715;
   border-style: solid;
   border-width: 2px;
+  /* opacity: .9; */
 }
 
 .logoimg {
