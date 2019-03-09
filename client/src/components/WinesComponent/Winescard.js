@@ -3,7 +3,9 @@ import "./style.css";
 
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
-class Spiritscard extends React.Component {
+
+class Winescard extends React.Component {
+
   render() {
 
     return (
@@ -21,20 +23,17 @@ class Spiritscard extends React.Component {
           <div>
             <div className="card mx-auto">
               <div>
-                <img className="card-img-top img-fluid" src={this.props.ImgUrl} alt={this.props.ProductName} />
+                <img className="card-img-top img-fluid" src={this.props.ImgUrl} alt={this.props.FamilyName} />
               </div>
               <div className="card-body">
-                <h4 className="card-title text-center">{this.props.ProductName}
+                <h4 className="card-title text-center">{this.props.FamilyName}
                 </h4>
                 <div className="row">
                   <div className="col-6 card-font-property pr-0">
-                    {this.props.Category}
-                    {this.props.Type}
-                    {this.props.SubType}
-                    {this.props.CountryType}
+                    {this.props.Types}
                     <br />
 
-                    {this.props.Abv}<span className="card-font-property2"></span>
+                    {this.props.Size}<span className="card-font-property2"></span>
                   </div>
 
                 </div>
@@ -48,7 +47,7 @@ class Spiritscard extends React.Component {
             <div>
               <div className="card mx-auto">
                 <div className="card-body">
-                  <h4 className="card-title text-center">{this.props.ProductName}
+                  <h4 className="card-title text-center">{this.props.FamilyName}
                   </h4>
                   <div className="row">
                     {this.props.Description}
@@ -63,4 +62,4 @@ class Spiritscard extends React.Component {
   }
 }
 
-export default Spiritscard;
+export default Winescard;
