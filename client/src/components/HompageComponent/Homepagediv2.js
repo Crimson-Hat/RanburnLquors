@@ -14,7 +14,7 @@ function Homepagediv2() {
           About Radburn Liquors
       </div>
         <div className="description1 pb-4">
-          We are a family-owned local business that provides small-town service with an international inventory. Looking for something specific or special, maybe even a hard-to-find product?  For your convenience, we can obtain special products for our customers. Just ask! We also have NJ lottery, cigars/cigarettes and a generous selection of tasty snacks. Best of all, we're open every day. Call us today for custom orders or requests!
+          We are a family-owned local business that provides small-town service with an international inventory. If you are looking for something specific, special, or hard-to-find, we are happy to obtain special products for our customers. Just ask! We also have NJ lottery, cigars/cigarettes and a generous selection of tasty snacks. Best of all, we're open every day! Call us today for custom orders or requests!
         </div>
 
 
