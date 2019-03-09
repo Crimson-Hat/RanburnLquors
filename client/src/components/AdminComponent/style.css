@@ -1,4 +1,7 @@
+
 .adminBackground {
+  margin: 0;
+  padding: 0;
   background-color: #fff;
   opacity: 0.93;
 }
@@ -6,4 +9,28 @@
 .adminCard {
   background-color: #c9bc70;
   opacity: 1;
+}
+
+.title-row {
+  background-color: #5e1715;
+}
+
+.form-title-h3 {
+  color: white;
+}
+
+.headingbar {
+  background-color:  #5e1715;
+  color: white;
+  margin: auto;
+  padding: 0;
+}
+
+.form-control {
+  background-color: white;
+  /* opacity: .5; */
+}
+
+label {
+  text-align: center;
 }

@@ -34,7 +34,7 @@ class Admin extends React.Component {
     chosenBeer: {
       _id: "",
       BrandName: "",
-      AvailableSizes:"",
+      AvailableSizes: "",
       BeerStyle: "",
       Abv: "",
       Description: "",
@@ -64,12 +64,12 @@ class Admin extends React.Component {
     })
       .catch(err => console.log(err));
 
-      console.log('hi beer');
-      API.getBeers().then(res => {
-        console.log("hi beer again");
-        console.log(res.data);
-        this.setState({ beers: res.data });
-      })
+    console.log('hi beer');
+    API.getBeers().then(res => {
+      console.log("hi beer again");
+      console.log(res.data);
+      this.setState({ beers: res.data });
+    })
   }
 
   // this gets fed into AdminSpiritsForm1 for the select dropdown
@@ -184,7 +184,7 @@ class Admin extends React.Component {
 
     const { name, value } = event.target;
 
-    const chosenBeer = { ...this.state.chosenBeer};
+    const chosenBeer = { ...this.state.chosenBeer };
 
     chosenBeer[name] = value;
 
@@ -232,18 +232,18 @@ class Admin extends React.Component {
       delete chosenWine._id;
 
       API.addNewWine(chosenWine)
-      .then(res => {
-        const w0 = res.data;
-      })
-      .catch(err => console.log(err));
+        .then(res => {
+          const w0 = res.data;
+        })
+        .catch(err => console.log(err));
     }
 
     if (this.state.formTypeWines === "edit") {
       API.saveWines(chosenWine, chosenWine._id)
-      .then(res => {
-        const w1 = res.data;
-      })
-      .catch(err => console.log(err));
+        .then(res => {
+          const w1 = res.data;
+        })
+        .catch(err => console.log(err));
     }
 
   }
@@ -257,18 +257,18 @@ class Admin extends React.Component {
       delete chosenBeer._id;
 
       API.addNewBeer(chosenBeer)
-      .then(res => {
-        const b0 = res.data;
-      })
-      .catch(err => console.log(err));
+        .then(res => {
+          const b0 = res.data;
+        })
+        .catch(err => console.log(err));
     }
 
     if (this.state.formTypeBeers === "edit") {
       API.saveBeers(chosenBeer, chosenBeer._id)
-      .then(res => {
-        const b1 = res.data;
-      })
-      .catch(err => console.log(err));
+        .then(res => {
+          const b1 = res.data;
+        })
+        .catch(err => console.log(err));
     }
 
   }
@@ -297,10 +297,10 @@ class Admin extends React.Component {
     const chosenWine = { ...this.state.chosenWine };
 
     API.deleteWines(chosenWine._id)
-    .then(res => {
-      const w2 = res.data;
-    })
-    .catch(err => console.log(err));
+      .then(res => {
+        const w2 = res.data;
+      })
+      .catch(err => console.log(err));
   }
 
   handleDatabaseDelete3 = event => {
@@ -309,10 +309,10 @@ class Admin extends React.Component {
     const chosenBeer = { ...this.state.chosenBeer };
 
     API.deletebeers(chosenBeer._id)
-    .then(res => {
-      const b2 = res.data;
-    })
-    .catch(err => console.log(err));
+      .then(res => {
+        const b2 = res.data;
+      })
+      .catch(err => console.log(err));
   }
 
 
@@ -327,24 +327,13 @@ class Admin extends React.Component {
 
 
         <div>
-          <div className="container-fluid mx-auto card-content adminBackground">
-            <div className="row container-fluid">
-              <div className="col-4">
-          <h1 className="title">Spirits</h1>
-                <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
-                <h1>Add the preview card below here</h1>
+          <div className="container-fluid card-content adminBackground">
+            <div className="row container-fluid m-0 p-0">
+              <div className="row container-fluid headingbar my-2">
+                <h1>Wines Page Editor</h1>
               </div>
-
-              <div className="col-8">
-                <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} handleDatabaseUpdate={this.handleDatabaseUpdate} handleDatabaseDelete={this.handleDatabaseDelete} />
-              </div>
-
-
-            </div>
-
-            <div className="row container-fluid">
               <div className="col-4">
-            <h1 className="title">Wines</h1>
+                {/* <h1 className="title">Wines</h1> */}
                 <AdminWinesForm1 handleInputChange2={this.handleWineSelect} wines={this.state.wines} />
                 <h1>Add the preview wine card below here</h1>
               </div>
@@ -355,9 +344,29 @@ class Admin extends React.Component {
 
             </div>
 
-            <div className="row container-fluid">
+
+
+            <div className="row container-fluid headingbar my-2">
+              <h1>Spirits Page Editor</h1>
+            </div>
+            <div className="row container-fluid ">
               <div className="col-4">
-            <h1 className="title">Beers</h1>
+                <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
+                <h1>Add the preview card below here</h1>
+              </div>
+              <div className="col-8">
+                <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} handleDatabaseUpdate={this.handleDatabaseUpdate} handleDatabaseDelete={this.handleDatabaseDelete} />
+              </div>
+            </div>
+
+
+
+            <div className="row container-fluid m-0 p-0">
+              <div className="row container-fluid headingbar my-2">
+                <h1>Beers Page Editor</h1>
+              </div>
+              <div className="col-4">
+                <h1 className="title">Beers</h1>
                 <AdminBeersForm1 handleInputChange3={this.handleBeerSelect} beers={this.state.beers} />
                 <h1>Add the preview beer card below here</h1>
               </div>
