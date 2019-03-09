@@ -330,7 +330,7 @@ class Admin extends React.Component {
           <div className="container-fluid card-content adminBackground">
             <div className="row container-fluid m-0 p-0">
               <div className="row container-fluid headingbar my-2">
-                <h1 className="text-center">Wines Page Editor</h1>
+                <h1>Wines Page Editor</h1>
               </div>
               <div className="col-4">
                 {/* <h1 className="title">Wines</h1> */}
@@ -347,7 +347,7 @@ class Admin extends React.Component {
 
 
             <div className="row container-fluid headingbar my-2">
-              <h1 className="text-center">Spirits Page Editor</h1>
+              <h1>Spirits Page Editor</h1>
             </div>
             <div className="row container-fluid ">
               <div className="col-4">
@@ -363,7 +363,7 @@ class Admin extends React.Component {
 
             <div className="row container-fluid m-0 p-0">
               <div className="row container-fluid headingbar my-2">
-                <h1 className="text-center">Beers Page Editor</h1>
+                <h1>Beers Page Editor</h1>
               </div>
               <div className="col-4">
                 <h1 className="title">Beers</h1>
