@@ -4,7 +4,7 @@ import "./style.css";
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
 
-class Winescardtest extends React.Component {
+class Beerscard extends React.Component {
 
   render() {
 
@@ -23,33 +23,34 @@ class Winescardtest extends React.Component {
           <div>
             <div className="card mx-auto">
               <div>
-                <img className="card-img-top img-fluid" src={this.props.ImgUrl} alt={this.props.FamilyName} />
+                <img className="card-img-top img-fluid" src={this.props.ImgUrl} alt={this.props.BrandName} />
               </div>
               <div className="card-body">
-                <h4 className="card-title text-center">{this.props.FamilyName}
+                <h4 className="card-title text-center">{this.props.BrandName}
                 </h4>
                 <div className="row">
                   <div className="col-6 card-font-property pr-0">
-                    {this.props.Types}
+                    {this.props.AvailableSizes}
+
                     <br />
 
-                    {this.props.Size}<span className="card-font-property2"></span>
+                    {this.props.Abv}<span className="card-font-property2"></span>
+                    {this.props.BeerStyle}
                   </div>
 
                 </div>
               </div>
             </div>
           </div>
-
-
-
         </FrontSide>
+
         <BackSide style={{ backgroundColor: '#175852' }}>
           <div>
             <div>
               <div className="card mx-auto">
                 <div className="card-body">
-                  <h4 className="card-title text-center">{this.props.FamilyName}
+                
+                  <h4 className="card-title text-center">{this.props.BrandName}
                   </h4>
                   <div className="row">
                     {this.props.Description}
@@ -58,13 +59,10 @@ class Winescardtest extends React.Component {
               </div>
             </div>
           </div>
-
-
-
         </BackSide>
       </Flippy>
     )
   }
 }
 
-export default Winescardtest;
+export default Beerscard;
