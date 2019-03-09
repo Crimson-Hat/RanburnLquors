@@ -17,8 +17,10 @@ function AdminWinesForm2(props) {
       ImgUrl: ""
     } */}
 
-          <div className="form-group">
-            <label htmlFor="familyUpdate">Name/Family of wine:</label>
+          <div className="form-group row">
+            <label htmlFor="familyUpdate" className="col-3">Name/Family of wine:</label>
+            <div className="col-9">
+            
             <textarea
             className="form-control"
             id="familyUpdate"
@@ -26,36 +28,59 @@ function AdminWinesForm2(props) {
             name="FamilyName"
             onChange={props.handleInputChange2}
             value={props.chosenWine.FamilyName}></textarea>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="CountryUpdate">Country:</label>
+          <div className="form-group row">
+            <label htmlFor="CountryUpdate" className="col-3">Country:</label>
+            <div className="col-9">
+            
             <textarea className="form-control"
             id="CountryUpdate"
             rows="1"
             value={props.chosenWine.Country}
             name="Country"
             onChange={props.handleInputChange2}></textarea>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="SizeUpdate">Size:</label>
+          <div className="form-group row">
+            <label htmlFor="SizeUpdate" className="col-3">Size:</label>
+            <div className="col-9">
+            
             <textarea className="form-control"
             id="SizeUpdate"
             rows="1"
             value={props.chosenWine.Size}
             name="Size"
             onChange={props.handleInputChange2}></textarea>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="TypesUpdate">Types:</label>
+          <div className="form-group row">
+            <label htmlFor="TypesUpdate" className="col-3">Types:</label>
+            <div className="col-9">
+            
             <textarea className="form-control"
             id="TypesUpdate"
             rows="1"
             value={props.chosenWine.Types}
             name="Types"
             onChange={props.handleInputChange2}></textarea>
+            </div>
+          </div>
+
+          <div className="form-group row">
+            <label htmlFor="ImgUrlUpdate" className="col-3">ImgUrl:</label>
+            <div className="col-9">
+            
+            <textarea className="form-control"
+            id="ImgUrlUpdate"
+            rows="1"
+            value={!props.chosenWine.ImgUrl ? "" : props.chosenWine.ImgUrl}
+            name="ImgUrl"
+            onChange={props.handleInputChange2}></textarea>
+            </div>
           </div>
 
           <div className="form-group">
@@ -68,15 +93,6 @@ function AdminWinesForm2(props) {
             onChange={props.handleInputChange2}></textarea>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="ImgUrlUpdate">ImgUrl:</label>
-            <textarea className="form-control"
-            id="ImgUrlUpdate"
-            rows="1"
-            value={!props.chosenWine.ImgUrl ? "" : props.chosenWine.ImgUrl}
-            name="ImgUrl"
-            onChange={props.handleInputChange2}></textarea>
-          </div>
 
           <button className="btn-block"
           onClick={props.handleDatabaseUpdate2}>Update the database</button>
