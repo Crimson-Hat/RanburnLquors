@@ -3,12 +3,15 @@ import AdminSpiritsForm1 from "./AdminComponent/AdminSpiritsForm1";
 import AdminSpiritsForm2 from "./AdminComponent/AdminSpiritsForm2";
 import AdminWinesForm1 from "./AdminComponent/AdminWinesForm1";
 import AdminWinesForm2 from "./AdminComponent/AdminWinesForm2";
+import AdminBeersForm1 from "./AdminComponent/AdminBeersForm1";
+import AdminBeersForm2 from "./AdminComponent/AdminBeersForm2";
 import API from '../utils/API';
 
 class Admin extends React.Component {
   state = {
     deals: [],
     wines: [],
+    beers: [],
     chosenItem: {
       _id: "",
       ProductName: "",
@@ -27,8 +30,18 @@ class Admin extends React.Component {
       Description: "",
       ImgUrl: ""
     },
+    chosenBeer: {
+      _id: "",
+      BrandName: "",
+      AvailableSizes:"",
+      BeerStyle: "",
+      Abv: "",
+      Description: "",
+      ImgUrl: ""
+    },
     formType: "add",
-    formTypeWines: "add"
+    formTypeWines: "add",
+    formTypeBeers: "add"
 
     // value: {}
   };
@@ -49,6 +62,13 @@ class Admin extends React.Component {
       this.setState({ wines: res.data })
     })
       .catch(err => console.log(err));
+
+      console.log('hi beer');
+      API.getBeers().then(res => {
+        console.log("hi beer again");
+        console.log(res.data);
+        this.setState({ beers: res.data });
+      })
   }
 
   // this gets fed into AdminSpiritsForm1 for the select dropdown
@@ -106,6 +126,31 @@ class Admin extends React.Component {
     });
   }
 
+  handleBeerSelect = event => {
+    const { name, value } = event.target;
+    let formTypeBeers = "add";
+    let beerPicked = {};
+    if (value === "Add a new beer") {
+      beerPicked = {
+        _id: "",
+        BrandName: "",
+        AvailableSizes: "",
+        BeerStyle: "",
+        Abv: "",
+        Description: "",
+        ImgUrl: ""
+      }
+    } else {
+      beerPicked = this.state.beers.find(beer => beer._id === value);
+      formTypeBeers = "edit"
+    }
+
+    this.setState({
+      chosenBeer: beerPicked,
+      formTypeBeers: formTypeBeers
+    });
+  }
+
   // this gets fed into AdminSpiritsForm2 for the edit form inputs
   handleFormEditChange = event => {
 
@@ -131,6 +176,18 @@ class Admin extends React.Component {
     chosenWine[name] = value;
 
     this.setState({ chosenWine });
+
+  }
+
+  handleFormEditChange3 = event => {
+
+    const { name, value } = event.target;
+
+    const chosenBeer = { ...this.state.chosenBeer};
+
+    chosenBeer[name] = value;
+
+    this.setState({ chosenBeer });
 
   }
 
@@ -190,6 +247,31 @@ class Admin extends React.Component {
 
   }
 
+  handleDatabaseUpdate3 = event => {
+    event.preventDefault();
+
+    const chosenBeer = { ...this.state.chosenBeer };
+
+    if (this.state.formTypeBeers === "add") {
+      delete chosenBeer._id;
+
+      API.addNewBeer(chosenBeer)
+      .then(res => {
+        const b0 = res.data;
+      })
+      .catch(err => console.log(err));
+    }
+
+    if (this.state.formTypeBeers === "edit") {
+      API.saveBeers(chosenBeer, chosenBeer._id)
+      .then(res => {
+        const b1 = res.data;
+      })
+      .catch(err => console.log(err));
+    }
+
+  }
+
   handleDatabaseDelete = event => {
     event.preventDefault();
 
@@ -216,6 +298,18 @@ class Admin extends React.Component {
     API.deleteWines(chosenWine._id)
     .then(res => {
       const w2 = res.data;
+    })
+    .catch(err => console.log(err));
+  }
+
+  handleDatabaseDelete3 = event => {
+    event.preventDefault();
+
+    const chosenBeer = { ...this.state.chosenBeer };
+
+    API.deletebeers(chosenBeer._id)
+    .then(res => {
+      const b2 = res.data;
     })
     .catch(err => console.log(err));
   }
@@ -257,6 +351,17 @@ class Admin extends React.Component {
                 <AdminWinesForm2 chosenWine={this.state.chosenWine} handleInputChange2={this.handleFormEditChange2} handleDatabaseUpdate2={this.handleDatabaseUpdate2} handleDatabaseDelete2={this.handleDatabaseDelete2} />
               </div>
 
+            </div>
+
+            <div className="row container-fluid">
+              <div className="col-5">
+                <AdminBeersForm1 handleInputChange3={this.handleBeerSelect} beers={this.state.beers} />
+                <h1>Add the preview beer card below here</h1>
+              </div>
+
+              <div className="col-5">
+                <AdminBeersForm2 chosenBeer={this.state.chosenBeer} handleInputChange3={this.handleFormEditChange3} handleDatabaseUpdate3={this.handleDatabaseUpdate3} handleDatabaseDelete3={this.handleDatabaseDelete3} />
+              </div>
             </div>
 
           </div>
