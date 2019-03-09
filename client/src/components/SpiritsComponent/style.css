@@ -1,0 +1,30 @@
+.card {
+  background: #1e8a2e;
+  /* background: #238b43;
+    background: #5e1715;
+    background: #5e1815; */
+
+  box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715; 
+}
+
+.card-body {
+  min-height: 39vh;
+}
+
+.card-title {
+  font-size: 1.1em;
+  min-height: 8vh;
+}
+
+.card-font-property {
+  font-size: 1em;
+}
+
+.card-font-property2 {
+  font-size: 0.90em;
+  font-style: italic;
+}
+
+.card-font-property3 {
+  font-size: 1.7em;
+}

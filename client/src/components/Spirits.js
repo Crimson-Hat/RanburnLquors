@@ -20,25 +20,27 @@ class Spirits extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>Spirits</div>
-        <div className="row justify-content-around">
-          {/* do .map here */}
-          {!this.state.spirits.length ? "" : (
-            this.state.spirits.map(spirit => {
+        <div className="container-fluid row">
+          {!this.state.spirits.length ? "" :
+            (this.state.spirits.map(spirits => {
               return (
-                <Spiritscard ProductName={spirit.ProductName} Abv={spirit.Abv}/>
+                <div className=" container-fluid col-sm-12 col-md-6 col-lg-3  my-2">
+                  <Spiritscard
+                    ProductName={spirits.ProductName}
+                    ImgUrl={spirits.ImgUrl}
+                    Category={spirits.Category}
+                    Types={spirits.Types}
+                    SubTypes={spirits.SubTypes}
+                    CountryType={spirits.CountryType}
+                    Abv={spirits.Abv}
+                    Description={spirits.Description}
+                  />
+                </div>
               )
             })
-          )}
+            )}
         </div>
-
-        <div>
-          <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-
-          <h1>Trying to load data from Spirits database</h1>
-          {JSON.stringify(this.state.spirits, null, 2)}
-        </div>
-      </React.Fragment>
+      </React.Fragment >
     )
   }
 }

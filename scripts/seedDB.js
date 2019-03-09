@@ -201,10 +201,6 @@ const winesSeed = [
 ];
 const beersSeed = [
   {
-    "MonthTitle": "March",
-    "MonthSubTitle": ""
-  },
-  {
     "BrandName": "Harpoon The Craic",
     "AvailableSizes": "12oz 6pk Bottles",
     "BeerStyle": "Irish Red IPA",
