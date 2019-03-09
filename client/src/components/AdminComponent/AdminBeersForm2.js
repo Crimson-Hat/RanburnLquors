@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 function AdminBeersForm2(props) {
   return (
     <div className="container-fluid">
-      <div className="card mb-5">
+      <div className="card mb-5 adminCard">
         <h3>{props.chosenBeer._id ? (`_id: ${JSON.stringify(props.chosenBeer._id)}`) : "Add a new item"}</h3>
         <form>
 
@@ -17,8 +18,10 @@ function AdminBeersForm2(props) {
       ImgUrl: ""
     } */}
 
-          <div className="form-group">
-            <label htmlFor="brandNameUpdate">BrandName of beer:</label>
+          <div className="form-group row">
+            <label htmlFor="brandNameUpdate" className="col-3">BrandName:</label>
+            <div className="col-9">
+            
             <textarea
             className="form-control"
             id="BrandNameUpdate"
@@ -26,36 +29,60 @@ function AdminBeersForm2(props) {
             name="BrandName"
             onChange={props.handleInputChange3}
             value={props.chosenBeer.BrandName}></textarea>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="AvailableSizesUpdate">AvailableSizes:</label>
+          <div className="form-group row">
+            <label htmlFor="AvailableSizesUpdate" className="col-3">AvailableSizes:</label>
+            <div className="col-9">
+            
             <textarea className="form-control"
             id="AvailableSizesUpdate"
             rows="1"
             value={props.chosenBeer.AvailableSizes}
             name="AvailableSizes"
             onChange={props.handleInputChange3}></textarea>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="BeerStyleUpdate">BeerStyle:</label>
+          <div className="form-group row">
+            <label htmlFor="BeerStyleUpdate" className="col-3">BeerStyle:</label>
+            <div className="col-9">
+            
             <textarea className="form-control"
             id="BeerStyleUpdate"
             rows="1"
             value={props.chosenBeer.BeerStyle}
             name="BeerStyle"
             onChange={props.handleInputChange3}></textarea>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="AbvUpdate">Abv:</label>
+          <div className="form-group row">
+            <label htmlFor="AbvUpdate" className="col-3">Abv:</label>
+            <div className="col-9">
+            
             <textarea className="form-control"
             id="AbvUpdate"
             rows="1"
             value={props.chosenBeer.Abv}
             name="Abv"
             onChange={props.handleInputChange3}></textarea>
+            </div>
+          </div>
+
+
+          <div className="form-group row">
+            <label htmlFor="ImgUrlUpdate" className="col-3">ImgUrl:</label>
+            <div className="col-9">
+            
+            <textarea className="form-control"
+            id="ImgUrlUpdate"
+            rows="1"
+            value={props.chosenBeer.ImgUrl}
+            name="ImgUrl"
+            onChange={props.handleInputChange3}></textarea>
+            </div>
           </div>
 
           <div className="form-group">
@@ -65,16 +92,6 @@ function AdminBeersForm2(props) {
             rows="5"
             value={props.chosenBeer.Description}
             name="Description"
-            onChange={props.handleInputChange3}></textarea>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="ImgUrlUpdate">ImgUrl:</label>
-            <textarea className="form-control"
-            id="ImgUrlUpdate"
-            rows="1"
-            value={props.chosenBeer.ImgUrl}
-            name="ImgUrl"
             onChange={props.handleInputChange3}></textarea>
           </div>
 

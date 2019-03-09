@@ -6,6 +6,7 @@ import AdminWinesForm2 from "./AdminComponent/AdminWinesForm2";
 import AdminBeersForm1 from "./AdminComponent/AdminBeersForm1";
 import AdminBeersForm2 from "./AdminComponent/AdminBeersForm2";
 import API from '../utils/API';
+import './AdminComponent/style.css';
 
 class Admin extends React.Component {
   state = {
@@ -326,15 +327,15 @@ class Admin extends React.Component {
 
 
         <div>
-          <h1 className="title">Admin Stuff</h1>
-          <div className="container-fluid mx-auto card-content">
+          <div className="container-fluid mx-auto card-content adminBackground">
             <div className="row container-fluid">
-              <div className="col-5">
+              <div className="col-4">
+          <h1 className="title">Spirits</h1>
                 <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
                 <h1>Add the preview card below here</h1>
               </div>
 
-              <div className="col-5">
+              <div className="col-8">
                 <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} handleDatabaseUpdate={this.handleDatabaseUpdate} handleDatabaseDelete={this.handleDatabaseDelete} />
               </div>
 
@@ -342,24 +343,26 @@ class Admin extends React.Component {
             </div>
 
             <div className="row container-fluid">
-              <div className="col-5">
+              <div className="col-4">
+            <h1 className="title">Wines</h1>
                 <AdminWinesForm1 handleInputChange2={this.handleWineSelect} wines={this.state.wines} />
                 <h1>Add the preview wine card below here</h1>
               </div>
 
-              <div className="col-5">
+              <div className="col-8">
                 <AdminWinesForm2 chosenWine={this.state.chosenWine} handleInputChange2={this.handleFormEditChange2} handleDatabaseUpdate2={this.handleDatabaseUpdate2} handleDatabaseDelete2={this.handleDatabaseDelete2} />
               </div>
 
             </div>
 
             <div className="row container-fluid">
-              <div className="col-5">
+              <div className="col-4">
+            <h1 className="title">Beers</h1>
                 <AdminBeersForm1 handleInputChange3={this.handleBeerSelect} beers={this.state.beers} />
                 <h1>Add the preview beer card below here</h1>
               </div>
 
-              <div className="col-5">
+              <div className="col-8">
                 <AdminBeersForm2 chosenBeer={this.state.chosenBeer} handleInputChange3={this.handleFormEditChange3} handleDatabaseUpdate3={this.handleDatabaseUpdate3} handleDatabaseDelete3={this.handleDatabaseDelete3} />
               </div>
             </div>

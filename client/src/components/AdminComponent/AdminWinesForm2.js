@@ -3,7 +3,7 @@ import React from 'react';
 function AdminWinesForm2(props) {
   return (
     <div className="container-fluid">
-      <div className="card mb-5">
+      <div className="card mb-5 adminCard">
         <h3>{props.chosenWine._id ? (`_id: ${JSON.stringify(props.chosenWine._id)}`) : "Add a new item"}</h3>
         <form>
 

@@ -4,7 +4,7 @@ function AdminWinesForm1(props) {
   return (
     <div className="container-fluid">
 
-      <div className="card mb-5">
+      <div className="card mb-5 adminCard">
       
         <form>
 
