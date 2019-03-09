@@ -302,7 +302,7 @@ class Admin extends React.Component {
     .catch(err => console.log(err));
   }
 
-  handleDatabaseDelete2 = event => {
+  handleDatabaseDelete3 = event => {
     event.preventDefault();
 
     const chosenBeer = { ...this.state.chosenBeer };
