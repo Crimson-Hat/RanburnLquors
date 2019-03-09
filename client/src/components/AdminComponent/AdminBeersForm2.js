@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './style.css';
 
 function AdminBeersForm2(props) {
   return (

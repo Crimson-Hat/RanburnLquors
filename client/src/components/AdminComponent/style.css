@@ -1,4 +1,7 @@
+
 .adminBackground {
+  margin: 0;
+  padding: 0;
   background-color: #fff;
   opacity: 0.93;
 }
@@ -7,3 +10,19 @@
   background-color: #c9bc70;
   opacity: 1;
 }
+
+.headingbar {
+  background-color:  #5e1715;
+  color: white;
+  margin: auto;
+  padding: 0;
+}
+
+.form-control {
+  background-color: white;
+  /* opacity: .5; */
+}
+
+      .adminBackground > .form-control {
+        opacity: .93;
+      }
