@@ -1,0 +1,37 @@
+.topbar {
+  /* background-color: #751b18; */
+  background-color:  #5e1715;
+  color: white;
+}
+
+.navcss {
+  background-color: white;
+  color: #5e1715;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.logoimg {
+  height: 20vh;
+}
+
+.tags {
+  /* background-color: #751b18; */
+  text-decoration: none;
+   font-size: 1.25em;
+  /* border-style: solid; */
+  /* border-width: 4px; */
+  background-color: white;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 15px;
+}
+
+.active {
+  font-weight: bold;
+  background-color:  #5e1715;
+  /* border-radius: 10px; */
+  border: none;
+  color: white;
+}
+
