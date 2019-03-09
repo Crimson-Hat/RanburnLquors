@@ -5,7 +5,8 @@ function Topbar() {
 
   return (
     <React.Fragment>
-      <div className="container-fluid topbar">
+      <div className="topbar" 
+      >
         call me will go here with images
   </div>
     </React.Fragment>

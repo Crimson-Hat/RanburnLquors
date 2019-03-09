@@ -20,12 +20,15 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
-      pauseOnHover: true
- 
-    };
+      autoplaySpeed: 3000,
+      arrows: false,
+      pauseOnHover: true,
+      swipeToSlide: true,
+      touchMove: true,
+
+     };
     return (
-      <div className="w-75 m-auto h-30">
+      <div className="m-auto h-30">
         <Slider {...settings}>
           <div >
             <img className="d-block text-center w-100" src={One} alt="First slide" />
@@ -42,10 +45,7 @@ export default class SimpleSlider extends Component {
           <div>
             <img className="d-block w-100" src={Five} alt="Fifth slide" />
           </div>
-          <div>
-
-          </div>
-        </Slider>
+          </Slider>
       </div>
     );
   }
