@@ -359,7 +359,7 @@ class Admin extends React.Component {
                 <h1>Add the preview beer card below here</h1>
               </div>
 
-              <div className="col=5">
+              <div className="col-5">
                 <AdminBeersForm2 chosenBeer={this.state.chosenBeer} handleInputChange3={this.handleFormEditChange3} handleDatabaseUpdate3={this.handleDatabaseUpdate3} handleDatabaseDelete3={this.handleDatabaseDelete3} />
               </div>
             </div>
