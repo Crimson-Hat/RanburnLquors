@@ -9,9 +9,9 @@ import Featured from './components/Featured';
 import Signin from './components/Signin';
 import Wines from './components/Wines';
 import Spirits from './components/Spirits';
-import Beers  from './components/Beers';
+import Beers from './components/Beers';
 
-
+import Topbar from "./components/UniversalComponent/Topbar"
 import NavBar from "./components/UniversalComponent/Navbar";
 
 import * as serviceWorker from './serviceWorker';
@@ -20,20 +20,27 @@ import * as serviceWorker from './serviceWorker';
 const Root = () => (
   <React.Fragment>
     <Router>
-    <div>
-      <NavBar />
-    
-      <Switch>
-        <Route component={Home} exact path="/" />
-        <Route component={Admin} exact path="/admin" />
-        <Route component={Checkout} exact path="/checkout" />
-        <Route component={Featured} exact path="/featured" />
-        <Route component={Signin} exact path="/signin" />
-        <Route component={Wines} exact path="/wines" />
-        <Route component={Spirits} exact path="/spirits" />
-        <Route component={Beers} exact path="/beers" />
-      </Switch>
-    </div>
+      <div style={
+        { 
+          margin: "auto",
+          width: "80%",
+          height: "auto",
+      }
+        }>
+        <Topbar />
+        <NavBar />
+
+        <Switch>
+          <Route component={Home} exact path="/" />
+          <Route component={Admin} exact path="/admin" />
+          <Route component={Checkout} exact path="/checkout" />
+          <Route component={Featured} exact path="/featured" />
+          <Route component={Signin} exact path="/signin" />
+          <Route component={Wines} exact path="/wines" />
+          <Route component={Spirits} exact path="/spirits" />
+          <Route component={Beers} exact path="/beers" />
+        </Switch>
+      </div>
     </Router>
   </React.Fragment>
 )
