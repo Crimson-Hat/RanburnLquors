@@ -1,24 +1,16 @@
 import React from 'react';
-
+import './style.css';
 
 function AdminBeersForm2(props) {
   return (
     <div className="container-fluid">
       <div className="card mb-5 adminCard">
-        <h3>{props.chosenBeer._id ? (`_id: ${JSON.stringify(props.chosenBeer._id)}`) : "Add a new item"}</h3>
+      <div className="title-row">
+        <h3 className="form-title-h3 text-center">{props.chosenBeer._id ? (`_id: ${JSON.stringify(props.chosenBeer._id)}`) : "Add a new item"}</h3>
+      </div>
         <form>
 
-        {/* chosenBeer: {
-      _id: "",
-      BrandName: "",
-      AvailableSizes:"",
-      BeerStyle: "",
-      Abv: "",
-      Description: "",
-      ImgUrl: ""
-    } */}
-
-          <div className="form-group row">
+          <div className="form-group row mt-2">
             <label htmlFor="brandNameUpdate" className="col-3">BrandName:</label>
             <div className="col-9">
             
