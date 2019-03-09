@@ -7,10 +7,10 @@ function AdminSpiritsForm1(props) {
   return (
     <div className="container-fluid">
 
-      <div className="card mb-5">
+      <div className="card mb-5 adminCard">
 
         <form>
-
+    
           <div className="form-group">
             <label htmlFor="itemUpdate">What Spirit would you like to update?</label>
             <select name="itemname" onChange={props.handleInputChange} className="form-control" id="itemUpdate">

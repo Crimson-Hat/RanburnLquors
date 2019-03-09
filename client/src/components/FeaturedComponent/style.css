@@ -1,8 +1,9 @@
 .card {
-  background: #1e8a2e;
-  /* background: #238b43;
+  /* background: #1e8a2e;
+  background: #238b43;
     background: #5e1715;
     background: #5e1815; */
+    /* background: #fff; */
 
   box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715; 
 }
