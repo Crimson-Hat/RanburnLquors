@@ -2,6 +2,7 @@ import React from "react";
 import AdminSpiritsForm1 from "./AdminComponent/AdminSpiritsForm1";
 import AdminSpiritsForm2 from "./AdminComponent/AdminSpiritsForm2";
 import AdminWinesForm1 from "./AdminComponent/AdminWinesForm1";
+import AdminWinesForm2 from "./AdminComponent/AdminWinesForm2";
 import API from '../utils/API';
 
 class Admin extends React.Component {
@@ -26,7 +27,8 @@ class Admin extends React.Component {
       Description: "",
       ImgUrl: ""
     },
-    formType: "add"
+    formType: "add",
+    formTypeWines: "add"
 
     // value: {}
   };
@@ -251,7 +253,6 @@ class Admin extends React.Component {
                 <h1>Add the preview wine card below here</h1>
               </div>
 
-              {/* ADD THE ADMINWINESFORM2 STUFF HERE */}
               <div className="col-5">
                 <AdminWinesForm2 chosenWine={this.state.chosenWine} handleInputChange2={this.handleFormEditChange2} handleDatabaseUpdate2={this.handleDatabaseUpdate2} handleDatabaseDelete2={this.handleDatabaseDelete2} />
               </div>

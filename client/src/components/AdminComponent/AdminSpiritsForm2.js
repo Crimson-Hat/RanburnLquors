@@ -63,7 +63,7 @@ function AdminSpiritsForm2(props) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="DescriptionUpdate">ImgUrl:</label>
+            <label htmlFor="ImgUrlUpdate">ImgUrl:</label>
             <textarea className="form-control"
             id="ImgUrlUpdate"
             rows="1"
