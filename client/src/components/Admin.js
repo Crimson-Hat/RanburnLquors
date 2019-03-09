@@ -85,7 +85,7 @@ class Admin extends React.Component {
     const { name, value } = event.target;
     let formTypeWines = "add";
     let winePicked = {};
-    if (value === "Add a new item") {
+    if (value === "Add a new wine") {
       winePicked = {
         _id: "",
         FamilyName: "",
