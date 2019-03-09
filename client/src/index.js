@@ -20,7 +20,7 @@ import * as serviceWorker from './serviceWorker';
 const Root = () => (
   <React.Fragment>
     <Router>
-      <div style={
+      <div className="masterdiv" style={
         {
           margin: "auto",
           width: "82%",
