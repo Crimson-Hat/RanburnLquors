@@ -366,7 +366,6 @@ class Admin extends React.Component {
                 <h1>Beers Page Editor</h1>
               </div>
               <div className="col-4">
-                <h1 className="title">Beers</h1>
                 <AdminBeersForm1 handleInputChange3={this.handleBeerSelect} beers={this.state.beers} />
                 <h1>Add the preview beer card below here</h1>
               </div>

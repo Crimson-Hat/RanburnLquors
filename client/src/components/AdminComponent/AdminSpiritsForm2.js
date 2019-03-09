@@ -5,9 +5,9 @@ function AdminSpiritsForm2(props) {
   return (
     <div className="container-fluid">
       <div className="card mb-5 adminCard">
-      <div className="title-row">
-        <h3 className="form-title-h3 text-center">{props.chosenItem._id ? (`_id: ${JSON.stringify(props.chosenItem._id)}`) : "Add a new item"}</h3>
-      </div>
+        <div className="title-row">
+          <h3 className="form-title-h3 text-center">{props.chosenItem._id ? (`_id: ${JSON.stringify(props.chosenItem._id)}`) : "Add a new item"}</h3>
+        </div>
         <form>
 
           <div className="form-group row mt-2">
@@ -99,20 +99,23 @@ function AdminSpiritsForm2(props) {
           <div className="form-group row">
             <label htmlFor="ImgUrlUpdate" className="col-3">ImgUrl:</label>
             <div className="col-9">
-            
-            <textarea className="form-control"
-              id="ImgUrlUpdate"
-              rows="1"
-              value={!props.chosenItem.ImgUrl ? "" : props.chosenItem.ImgUrl}
-              name="ImgUrl"
-              onChange={props.handleInputChange}></textarea>
+
+              <textarea className="form-control"
+                id="ImgUrlUpdate"
+                rows="1"
+                value={!props.chosenItem.ImgUrl ? "" : props.chosenItem.ImgUrl}
+                name="ImgUrl"
+                onChange={props.handleInputChange}></textarea>
             </div>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="DescriptionUpdate">Description:</label>
-            <textarea className="form-control" id="DescriptionUpdate" rows="5" value={props.chosenItem.Description} name="Description"
-              onChange={props.handleInputChange}></textarea>
+          <div className="form-group row">
+            <label htmlFor="DescriptionUpdate" className="col-3">Description:</label>
+            <div className="col-9">
+
+              <textarea className="form-control" id="DescriptionUpdate" rows="5" value={props.chosenItem.Description} name="Description"
+                onChange={props.handleInputChange}></textarea>
+            </div>
           </div>
 
           <button className="btn-block"
