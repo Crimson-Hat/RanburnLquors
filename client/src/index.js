@@ -21,12 +21,15 @@ const Root = () => (
   <React.Fragment>
     <Router>
       <div style={
-        { 
+        {
           margin: "auto",
-          width: "80%",
+          width: "82%",
           height: "auto",
-      }
-        }>
+          color: "#5e1715",
+          borderStyle: "solid",
+          borderWidth: "2px",
+        }
+      }>
         <Topbar />
         <NavBar />
 

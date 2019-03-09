@@ -6,7 +6,9 @@
 
 .navcss {
   background-color: white;
-  
+  color: #5e1715;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .logoimg {
@@ -16,19 +18,20 @@
 .tags {
   /* background-color: #751b18; */
   text-decoration: none;
-  background-color:  #5e1715;
-  color: white;
-  font-size: 1.4em;
+   font-size: 1.25em;
   /* border-style: solid; */
   /* border-width: 4px; */
-  border-radius: 10px;
-  
-}
-
-.active {
   background-color: white;
   border-style: solid;
   border-width: 4px;
   border-radius: 15px;
+}
+
+.active {
+  font-weight: bold;
+  background-color:  #5e1715;
+  /* border-radius: 10px; */
+  border: none;
+  color: white;
 }
 

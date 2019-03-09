@@ -22,35 +22,35 @@ function NavBar() {
         </div>
         <div className="row container col-sm-10 col-md-6 text-center">
           <div className="col-4 text-center px-45">
-          <NavLink
-            style={{ textDecoration: 'none', color: 'White' }}
+            <NavLink
+              style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/wines'
-              className="tags px-1"
-              activeStyle={{ color: '#5e1715', fontWeight: 'bold' }}>
+              className="tags px-2"
+              activeStyle={{ color: 'white' }}>
               Wines
           </NavLink>
           </div>
           <div className="col-4 text-center">
-          <NavLink
-            style={{ textDecoration: 'none', color: 'White' }}
+            <NavLink
+              style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/spirits'
-              className="tags px-1"
-              activeStyle={{ color: '#5e1715', fontWeight: 'bold' }}>
+              className="tags px-2"
+              activeStyle={{ color: 'white' }}>
               Spirits
           </NavLink>
           </div>
           <div className="col-4 text-center">
             <NavLink
-            style={{ textDecoration: 'none', color: 'White' }}
+              style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/beers'
-              className="tags px-1"
-              activeStyle={{ color: '#5e1715', fontWeight: 'bold' }}>
+              className="tags px-2"
+              activeStyle={{ color: 'white' }}>
               Beers
             </NavLink>
-           </div>
+          </div>
         </div>
         <div className="container col-sm-1 col-md-3 text-center">
-        {/* <Link
+          {/* <Link
         style={{ textDecoration: 'none', color: 'black' }} 
         to="/admin"
         >
