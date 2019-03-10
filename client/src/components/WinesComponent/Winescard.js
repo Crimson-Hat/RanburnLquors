@@ -25,33 +25,17 @@ class Winescard extends React.Component {
               <div className="card-body p-0 m-0">
                 <div className="cardtitle text-center">{this.props.FamilyName}
                 </div>
-                <div className="container-fluid row m-0 p-0">
-                  <div className="col-6">
+                <div className="container-fluid cardcontent row m-0 p-0">
 
-
-                  </div>
-
-                  <div className="col-6 p-0 m-0">
-                    <div className="card-img-top text-center">                      
-                        <img className="imgprop" src={this.props.ImgUrl} alt={this.props.FamilyName} />                      
-                    </div>
-
-                  </div>
-
-
-
-
-
-
-                </div>
-
-
-                <div className="container-fluid row m-0 p-0">
-                  <div className="col-6 card-font-property pr-0">
+                  <div className="col-6 colinherit">
                     {this.props.Types}
-                    <br />
+                    {this.props.Size}
+                  </div>
 
-                    {this.props.Size}<span className="card-font-property2"></span>
+                  <div className="container-fluid colinher text-center col-6 p-0 m-0">
+                                   
+                        <img className="imgprop img-fluid" src={this.props.ImgUrl} alt={this.props.FamilyName} />                      
+                   
                   </div>
 
                 </div>
