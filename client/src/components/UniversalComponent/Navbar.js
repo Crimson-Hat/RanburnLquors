@@ -25,7 +25,7 @@ function NavBar() {
             <NavLink
               style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/wines'
-              className="tags"
+              className="tags px-2"
               activeStyle={{ color: 'white' }}>
               Wines
           </NavLink>
@@ -34,7 +34,7 @@ function NavBar() {
             <NavLink
               style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/spirits'
-              className="tags"
+              className="tags px-2"
               activeStyle={{ color: 'white' }}>
               Spirits
           </NavLink>
@@ -43,7 +43,7 @@ function NavBar() {
             <NavLink
               style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/beers'
-              className="tags"
+              className="tags px-2"
               activeStyle={{ color: 'white' }}>
               Beers
             </NavLink>
