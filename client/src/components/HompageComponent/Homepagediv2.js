@@ -3,7 +3,6 @@ import "./style.css";
 import Wine1 from "./HomepageImages/wine1.jpg";
 import Beer1 from "./HomepageImages/beer1.jpg";
 import Spirit1 from "./HomepageImages/Spirit1.jpg";
-import Cigar1 from "./HomepageImages/cigar1.jpg";
 
 function Homepagediv2() {
 
@@ -19,9 +18,9 @@ function Homepagediv2() {
 
 
       </div>
-<div className="row container-fluid">
 
-</div>
+    <div className="row container-fluid">
+    </div>
       <div className="containerfluid row p-0 m-0 headertitle text-center">
 
         <div className="col-4">
