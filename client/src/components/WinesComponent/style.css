@@ -1,30 +1,45 @@
 .card {
-  /* background: #1e8a2e; */
-  /* background: #238b43;
-    background: #5e1715;
-    background: #5e1815; */
-
-  box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715; 
+background-color:  #e7da91d8;
+opacity: 0.98;
+border-radius: 50px
 }
-
+.flipbody{
+  /* max-height: 300vh; */
+}
 .card-body {
-  min-height: 39vh;
+  /* min-height: 100%; */
 }
 
-.card-title {
-  font-size: 1.1em;
-  min-height: 8vh;
+.cardtitle {
+  font-size: 1.5em;
+  min-height: 5vh;
+  font-weight: bold;
 }
 
-.card-font-property {
-  font-size: 1em;
+.cardcontent{
+  max-height: 30vh;
+  max-width: 100%;
+  }
+
+.colinherit {
+height: 100%;
 }
 
-.card-font-property2 {
-  font-size: 0.90em;
-  font-style: italic;
+.imgprop {
+  height: 30vh;
 }
 
-.card-font-property3 {
-  font-size: 1.7em;
+.backcarddescription {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.boldtitle {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.normalfont {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
 }

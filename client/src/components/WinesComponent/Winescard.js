@@ -19,21 +19,35 @@ class Winescard extends React.Component {
         style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
       >
 
-        <FrontSide className="col-12" style={{ backgroundColor: '#41669d' }}>
-          <div>
+        <FrontSide className="p-0 m-3 col-12">
+          <div className="container-fluid p-0">
             <div className="card mx-auto">
-              <div>
-                <img className="card-img-top img-fluid" src={this.props.ImgUrl} alt={this.props.FamilyName} />
-              </div>
-              <div className="card-body">
-                <h4 className="card-title text-center">{this.props.FamilyName}
-                </h4>
-                <div className="row">
-                  <div className="col-6 card-font-property pr-0">
-                    {this.props.Types}
-                    <br />
+              <div className="card-body p-0 m-0">
+                <div className="cardtitle mt-3 text-center">{this.props.FamilyName}
+                </div>
 
-                    {this.props.Size}<span className="card-font-property2"></span>
+                <div className="container-fluid cardcontent row m-0 p-0">
+
+                  <div className="col-6 colinherit pl-3">
+                    <div className="country pb-2 pl-2">
+                      <span className="boldtitle">Country </span>
+                      <br />
+                      <span className="normalfont">{this.props.Country}</span>
+                    </div>
+                    <div className="types pb-2 pl-2">
+                      <span className="boldtitle">Types</span>
+                      <br />
+                      <span className="normalfont ">{this.props.Types}</span>
+                    </div>
+                    <div className="size pb-2 pl-2">
+                      <span className="boldtitle">Availble in</span>
+                      <br />
+                      <span className="normalfont">{this.props.Size}</span>
+                    </div>
+                  </div>
+
+                  <div className="container-fluid colinher  col-6 p-0 m-0">
+                    <img className="imgprop img-fluid" src={this.props.ImgUrl} alt={this.props.FamilyName} />
                   </div>
 
                 </div>
@@ -42,14 +56,14 @@ class Winescard extends React.Component {
           </div>
         </FrontSide>
 
-        <BackSide style={{ backgroundColor: '#175852' }}>
+        <BackSide className="p-0 col-12">
           <div>
-            <div>
-              <div className="card mx-auto">
-                <div className="card-body">
-                  <h4 className="card-title text-center">{this.props.FamilyName}
-                  </h4>
-                  <div className="row">
+            <div className="card mx-auto">
+              <div className="card-body m-0 p-0">
+                <div className="cardtitle mt-3 text-center">{this.props.FamilyName}
+                </div>
+                <div className="container-fluid row m-0 p-0">
+                  <div className="container-fluid text-left backcarddescription">
                     {this.props.Description}
                   </div>
                 </div>
