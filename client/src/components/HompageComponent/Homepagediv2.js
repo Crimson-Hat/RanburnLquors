@@ -10,11 +10,11 @@ function Homepagediv2() {
     <React.Fragment>
       <div className="containerfluid row p-0 m-0 headertitle text-center">
         <div className="container-fluid">
-          <div className="titlehome m-auto">
+          <div className="about-radburn-title m-auto">
             About Radburn Liquors
           </div>
         </div>
-        <div className="description1 pb-4">
+        <div className="description1 pb-4 about-us-message">
           We are a family-owned local business that provides small-town service with an international inventory. If you are looking for something specific, special, or hard-to-find, we are happy to obtain special products for our customers. Just ask! We also have NJ lottery, cigarettes/cigars, and a generous selection of tasty snacks. Best of all, we're open every day! Call us today for custom orders or requests!
         </div>
       </div>

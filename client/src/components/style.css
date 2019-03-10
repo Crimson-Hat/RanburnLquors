@@ -70,8 +70,40 @@
 
 @media only screen and (min-width: 1025px) {
 
-  /* For mobile phones: */
+  /* For laptops: */
   .wineHeaderTitle1 {
     font-size: 3em;
   }
 }
+
+
+
+/* home header title (radburn liquors is your one-stop shop... */
+
+.homeHeaderTitle {
+  background-color: #5e1715;
+  color: white;
+  opacity: 0.8;
+}
+
+.homeHeaderTitle1 {
+  /* For cell phones */
+  font-size: 0.75em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  /* For tablets: */
+  .homeHeaderTitle1 {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .homeHeaderTitle1 {
+    font-size: 1.5em;
+  }
+}
+
