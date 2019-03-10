@@ -18,6 +18,8 @@ class Home extends Component {
         <Homepagediv2 />
 
         <Locationhours />
+        
+
 
 
       </React.Fragment>

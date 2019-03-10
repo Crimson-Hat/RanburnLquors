@@ -22,6 +22,10 @@ class Wines extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <div className="headertitle headertitle1 text-center py-3">
+          featured Wines!
+        </div>
+
         <div className="container-fluid row">
           {!this.state.wines.length ? "" :
             (this.state.wines.map(wines => {
