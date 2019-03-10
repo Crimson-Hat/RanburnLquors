@@ -28,4 +28,23 @@
   opacity: 0.92;
 }
 
+.designerbody {
 
+}
+
+.designer-link {
+  color: white;
+}
+
+.designer-link:hover {
+  color: #c9bc70;
+}
+
+.contact-p {
+  margin: auto;
+}
+
+.contact-j {
+  margin: auto;
+  float:right;
+}
