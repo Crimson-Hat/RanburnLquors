@@ -20,8 +20,8 @@ function NavBar() {
       <div className="row container-fluid pb-2 px-0 m-auto">
         <div className="container  col-sm-1 col-md-3 text-center">
         </div>
-        <div className="row container col-sm-10 col-md-6 text-center directory-links">
-          <div className="col-4 text-center px-45">
+        <div className="row container-fluid col-sm-10 col-md-6 p-0 m-0 text-center directory-links">
+          <div className="col-4 text-center px-4">
             <NavLink
               style={{ textDecoration: 'none', color: '#5e1715' }}
               to='/wines'

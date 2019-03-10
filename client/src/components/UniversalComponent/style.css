@@ -2,7 +2,7 @@
   /* background-color: #751b18; */
   background-color:  #5e1715;
   color: white;
-  opacity: .93;
+  /* opacity: .93; */
 }
 
 .navcss {
@@ -14,13 +14,15 @@
 }
 
 .logoimg {
-  height: 20vh;
+  width: 20vw;
+  /* height: 20vh; */
 }
 
 .tags {
   /* background-color: #751b18; */
   text-decoration: none;
    font-size: 1.25em;
+   /* font-size: 1.25vw; */
   /* border-style: solid; */
   /* border-width: 4px; */
   background-color: white;
@@ -39,4 +41,23 @@
 
 .directory-links {
   background-color: #5e1715;
+  border-color: #5e1715;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 30px;
+}
+
+.footer {
+  /* background-color: #751b18; */
+  background-color:  #5e1715;
+  color: white;
+  /* opacity: .93; */
+}
+
+.disclaimerlink {
+  color: white;
+  }
+
+.designerlink {
+  color: white;
 }

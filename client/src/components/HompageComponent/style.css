@@ -51,6 +51,7 @@
 .locationmaster {
   background-color: white;
   color: #5e1715;
+  opacity: .92;
 }
 
 .locationtitle {
@@ -83,7 +84,14 @@ a:hover {
 }
 
 .hourstitle {
-  font-size: 1.25em;
+  padding-top: 13%;
+  font-size: 1.45em;
   font-weight: bold;
+}
 
+.hourslist {
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Playfair Display', serif;
 }
