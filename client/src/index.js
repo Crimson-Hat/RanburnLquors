@@ -10,9 +10,11 @@ import Signin from './components/Signin';
 import Wines from './components/Wines';
 import Spirits from './components/Spirits';
 import Beers from './components/Beers';
+import Disclaimer from './components/Disclaimer';
 
 import Topbar from "./components/UniversalComponent/Topbar"
 import NavBar from "./components/UniversalComponent/Navbar";
+import Footer from "./components/UniversalComponent/Footer";
 
 import * as serviceWorker from './serviceWorker';
 
@@ -32,6 +34,7 @@ const Root = () => (
       }>
         <Topbar />
         <NavBar />
+        
 
         <Switch>
           <Route component={Home} exact path="/" />
@@ -42,7 +45,9 @@ const Root = () => (
           <Route component={Wines} exact path="/wines" />
           <Route component={Spirits} exact path="/spirits" />
           <Route component={Beers} exact path="/beers" />
+          <Route component={Disclaimer} exact path="/disclaimer" />
         </Switch>
+        <Footer />
       </div>
     </Router>
   </React.Fragment>
