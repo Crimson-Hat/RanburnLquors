@@ -7,4 +7,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-size: 100% 100%;
+  /* font-family: 'Heebo', sans-serif; */
+  /* font-family: 'Catamaran', sans-serif; */
+  /* font-family: 'Courgette', cursive; */
+  font-family: 'Playfair Display SC', serif;
+  /* font-family: 'Playfair Display', serif; */
 }
+
+/* the logo uses ventura times font */

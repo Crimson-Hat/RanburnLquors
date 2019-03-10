@@ -20,7 +20,7 @@ function NavBar() {
       <div className="row container-fluid pb-2 px-0 m-auto">
         <div className="container  col-sm-1 col-md-3 text-center">
         </div>
-        <div className="row container col-sm-10 col-md-6 text-center">
+        <div className="row container col-sm-10 col-md-6 text-center directory-links">
           <div className="col-4 text-center px-45">
             <NavLink
               style={{ textDecoration: 'none', color: '#5e1715' }}

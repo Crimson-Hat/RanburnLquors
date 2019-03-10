@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <div className="headertitle headertitle1 text-center py-3">
-        Proudly serving customers throughout Bergen and Passaic Counties!
+        Radburn Liquors is your one-stop shop for quality wines, spirits, and beers!
         </div>
 
         <SimpleSlider/>

@@ -13,8 +13,9 @@ function Homepagediv2() {
           About Radburn Liquors
       </div>
         <div className="description1 pb-4">
-          Radburn Liquors is your one-stop shop in Fair Lawn, NJ for quality beer, wine, liquors, NJ lottery, cigars and cigarettes and a generous selection of tasty snacks. We are a locally- and family-owned company that provides small-town service with an international inventory. Looking for something specific or special, even a hard-to-find product?  For your convenience, we can obtain specialize products for our customers.  Just ask! Best of all, we're available every day.  Visit us Monday-Sunday, or call today for custom orders or requests!
+          We are a family-owned local business that provides small-town service with an international inventory. If you are looking for something specific, special, or hard-to-find, we are happy to obtain special products for our customers. Just ask! We also have NJ lottery, cigarettes/cigars, and a generous selection of tasty snacks. Best of all, we're open every day! Call us today for custom orders or requests!
         </div>
+
 
       </div>
 
