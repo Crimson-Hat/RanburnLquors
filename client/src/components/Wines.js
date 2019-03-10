@@ -33,6 +33,7 @@ class Wines extends React.Component {
                     Types={wines.Types}
                     Size={wines.Size}
                     Description={wines.Description}
+                    Country={wines.Country}
                   />
                 </div>
               )

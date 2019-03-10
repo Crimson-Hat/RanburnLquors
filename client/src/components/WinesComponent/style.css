@@ -36,3 +36,8 @@ height: 100%;
 .backcarddescription {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.boldtitle {
+  font-weight: bold;
+  text-decoration: underline;
+}
