@@ -48,3 +48,30 @@
   margin: auto;
   float:right;
 }
+
+.wineHeaderTitle {
+  background-color: #5e1715;
+  color: white;
+  opacity: 0.8;
+}
+
+.wineHeaderTitle1 {
+  /* For cell phones */
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  /* For tablets: */
+  .wineHeaderTitle1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For mobile phones: */
+  .wineHeaderTitle1 {
+    font-size: 3em;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import API from "../utils/API";
-import "./WinesComponent/style.css";
+import "./style.css";
 
 
 import Winescard from "./WinesComponent/Winescard";
@@ -24,7 +24,7 @@ class Wines extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="headertitle headertitle1 text-center py-3">
+        <div className="wineHeaderTitle wineHeaderTitle1 text-center py-3">
           Featured Wines
         </div>
 
