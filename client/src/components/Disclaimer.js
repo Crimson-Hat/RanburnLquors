@@ -15,7 +15,7 @@ class Disclaimer extends React.Component {
           </div>
 
           <div className="container-fluid row text-justify disclaimerbody">
-            1. This is an Agreement between you and Radburn Liquors (“Company”). This Agreement governs your use of this Web site (the “Site”). You represent that you are at least 21 years of age. THE COMPANY OFFERS THE SITE TO YOU CONDITIONED ON YOUR ACCEPTANCE WITHOUT MODIFICATION OF THIS AGREEMENT. YOUR USE OF THE SITE CONSTITUTES YOUR ACCEPTANCE OF THIS AGREEMENT. THIS AGREEMENT CONTAINS DISCLAIMERS OF WARRANTIES AND LIABILITY (SEE SECTIONS 5 AND 6) AND AN EXCLUSIVE REMEDY (SEE SECTION 7). THESE PROVISIONS FORM AN ESSENTIAL BASIS FOR YOUR USE OF THE SITE. You agree not to use the Site in any way that is unlawful.
+            {/* 1. This is an Agreement between you and Radburn Liquors (“Company”). This Agreement governs your use of this Web site (the “Site”). You represent that you are at least 21 years of age. THE COMPANY OFFERS THE SITE TO YOU CONDITIONED ON YOUR ACCEPTANCE WITHOUT MODIFICATION OF THIS AGREEMENT. YOUR USE OF THE SITE CONSTITUTES YOUR ACCEPTANCE OF THIS AGREEMENT. THIS AGREEMENT CONTAINS DISCLAIMERS OF WARRANTIES AND LIABILITY (SEE SECTIONS 5 AND 6) AND AN EXCLUSIVE REMEDY (SEE SECTION 7). THESE PROVISIONS FORM AN ESSENTIAL BASIS FOR YOUR USE OF THE SITE. You agree not to use the Site in any way that is unlawful.
             <br/><br/>
             2. The Company reserves the right to modify the terms, conditions and notices under which it offers the Site without notice. Your continued use of the Site after any such changes constitutes your agreement to such changes. The Company further reserves the right to change prices and other information on the Site at any time without notice. The posting of prices and other terms of sale shall not constitute a binding order to sell product on such terms.
             <br/><br/>
@@ -33,7 +33,7 @@ class Disclaimer extends React.Component {
             <br/><br/>
             9. Certain provisions of this Agreement, including without limitation the provisions concerning protection of content, are also for the benefit of BMG. BMG shall have the right to assert and enforce those provisions directly and for the benefit of BMG.
             <br/><br/>
-            10. This Agreement constitutes the entire agreement of the parties with respect to its subject matter, and supersedes all previous written or oral agreements of the parties with respect to such subject matter. No waiver by either party of any breach or default by the other shall be deemed to be a waiver of any preceding or subsequent breach or default. This Agreement shall be governed by, and construed in accordance with, the laws of the State of New York, without regard to its conflict of laws rules.
+            10. This Agreement constitutes the entire agreement of the parties with respect to its subject matter, and supersedes all previous written or oral agreements of the parties with respect to such subject matter. No waiver by either party of any breach or default by the other shall be deemed to be a waiver of any preceding or subsequent breach or default. This Agreement shall be governed by, and construed in accordance with, the laws of the State of New York, without regard to its conflict of laws rules. */}
         </div>
 
         </div>
