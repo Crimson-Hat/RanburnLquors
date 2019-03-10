@@ -32,11 +32,12 @@ class Spirits extends React.Component {
                 <div className=" container-fluid col-sm-12 col-md-6 col-lg-3  my-2">
                   <Spiritscard
                     ProductName={spirits.ProductName}
+                    Volume={spirits.Volume}
                     ImgUrl={spirits.ImgUrl}
                     Category={spirits.Category}
-                    Types={spirits.Types}
-                    SubTypes={spirits.SubTypes}
-                    CountryType={spirits.CountryType}
+                    Type={spirits.Type}
+                    SubType={spirits.SubType}
+                    Country={spirits.Country}
                     Abv={spirits.Abv}
                     Description={spirits.Description}
                   />
