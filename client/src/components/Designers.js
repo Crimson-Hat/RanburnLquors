@@ -15,7 +15,7 @@ class Disclaimer extends React.Component {
           </div>
 
           <div className="container-fluid row text-justify designerbody">
-           Priyesh Patel/Jordan
+           Priyesh Patel/Jordan Mesibov
           </div>
 
         </div>

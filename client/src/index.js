@@ -11,6 +11,8 @@ import Wines from './components/Wines';
 import Spirits from './components/Spirits';
 import Beers from './components/Beers';
 import Disclaimer from './components/Disclaimer';
+import Designers from './components/Designers';
+
 
 import Topbar from "./components/UniversalComponent/Topbar"
 import NavBar from "./components/UniversalComponent/Navbar";
@@ -46,6 +48,9 @@ const Root = () => (
           <Route component={Spirits} exact path="/spirits" />
           <Route component={Beers} exact path="/beers" />
           <Route component={Disclaimer} exact path="/disclaimer" />
+          <Route component={Designers} exact path="/designers" />
+
+
         </Switch>
         <Footer />
       </div>
