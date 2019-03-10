@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "./style.css";
 import SimpleSlider from './HompageComponent/Slickcarousell';
 import Homepagediv2 from './HompageComponent/Homepagediv2';
+import Locationhours from './HompageComponent/Locationhours';
+
 
 class Home extends Component {
   render() {
@@ -14,6 +16,8 @@ class Home extends Component {
         <SimpleSlider/>
         
         <Homepagediv2 />
+
+        <Locationhours />
 
 
       </React.Fragment>
