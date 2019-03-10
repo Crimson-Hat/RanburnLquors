@@ -1,12 +1,85 @@
 .card {
+  background-color:  #e7da91d8;
+  opacity: 0.98;
+  border-radius: 50px;
+  border-style: none;
+  }
+  .flipbody{
+    /* max-height: 300vh; */
+  }
+  .card-body {
+    /* min-height: 100%; */
+  }
+  
+  .cardtitle {
+    font-size: 1.5em;
+    min-height: 5vh;
+    font-weight: bold;
+  }
+  
+  .cardcontent{
+    max-height: 30vh;
+    max-width: 100%;
+    }
+  
+  .colinherit {
+  height: 100%;
+  }
+  
+  .imgprop {
+    height: 30vh;
+  }
+  
+  .backcarddescription {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+  
+  .boldtitle {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .normalfont {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .card { */
   /* background: #1e8a2e; */
   /* background: #238b43;
     background: #5e1715;
     background: #5e1815; */
 
-  box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715; 
-}
-
+  /* box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715; 
+} */
+/* 
 .card-body {
   min-height: 39vh;
 }
@@ -27,4 +100,4 @@
 
 .card-font-property3 {
   font-size: 1.7em;
-}
+} */

@@ -92,8 +92,8 @@ const dealsSeed = [
 const spiritsSeed = [
   {
     "ProductName": "Rampur",
-    "Volume": "750",
-    "Abv": "43",
+    "Volume": "750ml",
+    "Abv": "43%",
     "Category": "Spirits",
     "Type": "Whiskey",
     "SubType": "Single Malt",
@@ -104,7 +104,7 @@ const spiritsSeed = [
   {
     "ProductName": "Clontarf",
     "Volume": "1000",
-    "Abv": "40",
+    "Abv": "40%",
     "Category": "Spirits",
     "Type": "Whiskey",
     "SubType": "Irish Whiskey",
@@ -114,8 +114,8 @@ const spiritsSeed = [
   },
   {
     "ProductName": "Amrut Fusion",
-    "Volume": "750",
-    "Abv": "50",
+    "Volume": "750ml",
+    "Abv": "50%",
     "Category": "Spirits",
     "Type": "Whiskey",
     "SubType": "Single Malt",
@@ -125,8 +125,8 @@ const spiritsSeed = [
   },
   {
     "ProductName": "Hine Rare VSOP",
-    "Volume": "750",
-    "Abv": "40",
+    "Volume": "750ml",
+    "Abv": "40%",
     "Category": "Spirits",
     "Type": "Brandy & Cognac",
     "SubType": "Cognac",
@@ -136,8 +136,8 @@ const spiritsSeed = [
   },
   {
     "ProductName": "Mejor Tequila Pink",
-    "Volume": "750",
-    "Abv": "40",
+    "Volume": "750ml",
+    "Abv": "40%",
     "Category": "Spirits",
     "Type": "Tequila",
     "SubType": "Blanco/Silver",
@@ -147,8 +147,8 @@ const spiritsSeed = [
   },
   {
     "ProductName": "Tito's Handmade Vodka",
-    "Volume": "750",
-    "Abv": "40",
+    "Volume": "750ml",
+    "Abv": "40%",
     "Category": "Spirits",
     "Type": "Vodka",
     "SubType": "",
