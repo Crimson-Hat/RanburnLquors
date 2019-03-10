@@ -1,5 +1,4 @@
-.carouseloutterdiv {
-}
+.carouseloutterdiv {}
 
 .slick-track {
   display: flex !important;
@@ -40,22 +39,6 @@
 }
 
 
-.locationmaster {
-  background-color: white;
-  color: #5e1715;
-  opacity: .92;
-}
-
-.locationtitle {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-}
-
-.addressdiv {
-  font-weight: bold;
-}
-
 .mapimage {
   max-height: 400px;
   border-style: solid;
@@ -75,19 +58,6 @@ a:hover {
   /* no underline */
 }
 
-.hourstitle {
-  padding-top: 13%;
-  font-size: 1.45em;
-  font-weight: bold;
-}
-
-.hourslist {
-  font-weight: bold;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 
 .description1 {
   padding: 0% 5%;
@@ -100,7 +70,7 @@ a:hover {
 /* ------------------------- */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  
+
   /* For tablets: */
   .description1 {
     font-size: 0.9em;
@@ -121,4 +91,110 @@ a:hover {
   color: white;
   font-size: 1.2em;
   text-align: center;
+}
+
+/* ------------------------- */
+/* location fonts */
+
+.locationmaster {
+  background-color: white;
+  color: #5e1715;
+  opacity: .92;
+}
+
+.locationtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .locationtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .locationtitle {
+    font-size: 2em;
+  }
+}
+
+/* ------------------------- */
+
+.addressdiv {
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .addressdiv {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .addressdiv {
+    font-size: 1.25em;
+  }
+}
+
+/* ------------------------- */
+/* hourstitle */
+
+.hourstitle {
+  padding-top: 13%;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .hourstitle {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .hourstitle {
+    font-size: 1.5em;
+  }
+}
+
+/* ------------------------- */
+/* hourslist */
+
+.hourslist {
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .hourslist {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .hourslist {
+    font-size: 1em;
+  }
 }
