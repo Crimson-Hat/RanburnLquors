@@ -20,6 +20,11 @@ class Beers extends React.Component {
   render() {
     return (
       <React.Fragment>
+
+        <div className="headertitle headertitle1 text-center py-3">
+          Monthly Featured Beers!
+        </div>
+
         <div className="container-fluid row">
           {!this.state.beers.length ? "" :
             (this.state.beers.map(beers => {

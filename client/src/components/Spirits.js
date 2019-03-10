@@ -20,6 +20,11 @@ class Spirits extends React.Component {
   render() {
     return (
       <React.Fragment>
+
+        <div className="headertitle headertitle1 text-center py-3">
+          Featured Spirits!
+        </div>
+
         <div className="container-fluid row">
           {!this.state.spirits.length ? "" :
             (this.state.spirits.map(spirits => {
