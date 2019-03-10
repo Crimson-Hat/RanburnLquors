@@ -23,31 +23,30 @@ class Winescard extends React.Component {
           <div className="container-fluid p-0">
             <div className="card mx-auto">
               <div className="card-body p-0 m-0">
-                <div className="cardtitle text-center">{this.props.FamilyName}
+                <div className="cardtitle mt-3 text-center">{this.props.FamilyName}
                 </div>
+
                 <div className="container-fluid cardcontent row m-0 p-0">
 
-                  <div className="col-6 colinherit">
-                    <div className="country">
-                      <span className="boldtitle">Country </span> 
-                      <br/>
+                  <div className="col-6 colinherit pl-3">
+                    <div className="country pb-2 pl-2">
+                      <span className="boldtitle">Country </span>
+                      <br />
                       <span className="normalfont">{this.props.Country}</span>
                     </div>
-                    <div className="types">
-                      <span className="boldtitle">Types</span>   
-                      <br/>                 
-                      <span className="normalfont">{this.props.Types}</span>
+                    <div className="types pb-2 pl-2">
+                      <span className="boldtitle">Types</span>
+                      <br />
+                      <span className="normalfont ">{this.props.Types}</span>
                     </div>
-                    <div className="size">
-                      <span className="boldtitle">Availble in</span>      
-                      <br/>              
+                    <div className="size pb-2 pl-2">
+                      <span className="boldtitle">Availble in</span>
+                      <br />
                       <span className="normalfont">{this.props.Size}</span>
                     </div>
-                    
-
                   </div>
 
-                  <div className="container-fluid colinher text-center col-6 p-0 m-0">
+                  <div className="container-fluid colinher  col-6 p-0 m-0">
                     <img className="imgprop img-fluid" src={this.props.ImgUrl} alt={this.props.FamilyName} />
                   </div>
 
@@ -61,7 +60,7 @@ class Winescard extends React.Component {
           <div>
             <div className="card mx-auto">
               <div className="card-body m-0 p-0">
-                <div className="cardtitle text-center">{this.props.FamilyName}
+                <div className="cardtitle mt-3 text-center">{this.props.FamilyName}
                 </div>
                 <div className="container-fluid row m-0 p-0">
                   <div className="container-fluid text-left backcarddescription">
