@@ -21,9 +21,9 @@ class Beerscard extends React.Component {
 
         <FrontSide >
           {this.props.BrandName}                                   {this.props.AvailableSizes}
-          {this.props.ImgUrl}
-          {this.props.Abv}
           {this.props.BeerStyle}
+          {this.props.Abv}
+          {this.props.ImgUrl}
 
         </FrontSide>
 

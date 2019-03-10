@@ -3,12 +3,14 @@
   opacity: 0.98;
   border-radius: 50px;
   border-style: none;
+  max-height: 100%;
   }
   .flipbody{
     /* max-height: 300vh; */
   }
   .card-body {
     /* min-height: 100%; */
+  
   }
   
   .cardtitle {
@@ -26,7 +28,7 @@
   height: 100%;
   }
   
-  .imgprop {
+  .imgpropsspirits {
     height: 30vh;
   }
   

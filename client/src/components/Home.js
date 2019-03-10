@@ -19,9 +19,6 @@ class Home extends Component {
 
         <Locationhours />
         
-
-
-
       </React.Fragment>
     );
   }

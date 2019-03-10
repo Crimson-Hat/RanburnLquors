@@ -17,21 +17,57 @@ class Spiritscard extends React.Component {
         style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
       >
 
-        <FrontSide>
-          {this.props.ProductName}
-          {this.props.Volume}
-          {this.props.ImgUrl}
-          {this.props.ProductName}
-          {this.props.Category}
-          {this.props.Type}
-          {this.props.SubType}
-          {this.props.CountryType}
-          {this.props.Abv}
+        <FrontSide className="p-0 m-3 col-12">
+          <div className="container-fluid p-0">
+            <div className="card mx-auto">
+              <div className="card-body p-0 m-0">
+                <div className="cardtitle mt-3 text-center">
+                  {this.props.ProductName}
+                </div>
+
+                <div className="container-fluid cardcontent row m-0 p-0">
+
+                  <div className="col-7 colinherit pl-3 mr-0">
+                    <div className="country pb-2 pl-2">
+                      <span className="boldtitle">Origin/Type</span>
+                      <br />
+                      <span className="normalfont">{this.props.Country}</span>
+                      <br />
+                      <span className="normalfont ">{this.props.Type}</span>
+                      <br />
+                      <span className="normalfont ">{this.props.SubType}</span>
+                      <br />
+                      <span className="normalfont ">{this.props.Volume}</span>
+                      <br />
+                      <span className="normalfont ">abv.{this.props.Abv}</span>
+                    </div>
+                  </div>
+
+                  <div className="container-fluid colinher  col-5 text-left p-0 m-0">
+                    <img className="imgpropsspirits img-fluid" src={this.props.ImgUrl} alt={this.props.ProductName} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </FrontSide>
 
-        <BackSide>
-          {this.props.ProductName}
-          {this.props.Description}
+        <BackSide className="p-0 col-12">
+          <div>
+            <div className="card mx-auto">
+              <div className="card-body m-0 p-0">
+                <div className="cardtitle mt-3 text-center">
+                  {this.props.ProductName}
+                </div>
+                <div className="container-fluid row m-0 p-0">
+                  <div className="container-fluid text-left backcarddescription">
+                    {this.props.Description}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </BackSide>
       </Flippy>
