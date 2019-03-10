@@ -16,7 +16,7 @@ class Disclaimer extends React.Component {
 
           <div className="container-fluid row text-justify designerbody">
 
-            <div className="col-12 col-sm-4 contact-p pl-5">
+            <div className="col-12 col-sm-4 pl-5">
               <h4 className="text-left">Priyesh Patel</h4>
               <div className="row">
                 E-mail: 91priyesh@gmail.com
