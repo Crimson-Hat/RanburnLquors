@@ -4,27 +4,31 @@
     background: #5e1715;
     background: #5e1815; */
 
-  box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715; 
+  /* box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715;  */
+  /* margin: 0; */
 }
-
+.flipbody{
+  max-height: 300vh;
+}
 .card-body {
-  min-height: 39vh;
+  min-height: 100%;
 }
 
-.card-title {
-  font-size: 1.1em;
-  min-height: 8vh;
+.cardtitle {
+  font-size: 1.5em;
+  min-height: 5vh;
+  font-weight: bold;
 }
 
-.card-font-property {
-  font-size: 1em;
+.card-img-top {
+  max-height: 25vh;
+  max-width: 100%;
+  }
+.imgprop{
+  max-width:100%;
+max-height:100%;
 }
 
-.card-font-property2 {
-  font-size: 0.90em;
-  font-style: italic;
-}
-
-.card-font-property3 {
-  font-size: 1.7em;
+.backcarddescription {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

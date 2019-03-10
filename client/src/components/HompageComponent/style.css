@@ -1,10 +1,8 @@
 .carouseloutterdiv {
-  box-shadow: 0 8px 16px 0 rgb(0, 0, 0), 0 12px 40px 0 rgb(0, 0, 0);
 }
 
 .slick-track {
   display: flex !important;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.842), 0 12px 40px 0 rgba(0, 0, 0, 0.651);
   /* height: 35vh; */
 
 }
