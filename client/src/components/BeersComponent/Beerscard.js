@@ -58,11 +58,20 @@ class Beerscard extends React.Component {
         </FrontSide>
 
         <BackSide className="p-0 col-12">
-
-
-          {this.props.BrandName}
-          {this.props.Description}
-
+        <div>
+            <div className="card mx-auto">
+              <div className="card-body m-0 p-0">
+                <div className="beersCardTitle mt-3 text-center">
+                  {this.props.ProductName}
+                </div>
+                <div className="container-fluid row m-0 p-0">
+                  <div className="container-fluid text-left beersBackCardDescription">
+                    {this.props.Description}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </BackSide>
 
 
