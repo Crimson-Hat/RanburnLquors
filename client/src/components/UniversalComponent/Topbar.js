@@ -5,15 +5,15 @@ function Topbar() {
 
   return (
     <React.Fragment>
-      <div className="topbar p-1">
+      <div className="topbar">
 
         <div class="d-flex justify-content-around p-1">
-          <a className="iconcss" href="" target="_blank">
+          <a className="iconcss" href="https://www.facebook.com/radburnliquors/" target="_blank">
             <i className="fab fa-facebook-f fals"></i>
           </a>
 
 
-          <a className="iconcss" href="" target="_blank">
+          <a className="iconcss" href="mailto:radburn.liquors@gmail.com" target="_blank">
             <i className="far fa-envelope-open fals"></i>
           </a>
 
@@ -23,19 +23,19 @@ function Topbar() {
           </a>
 
 
-          <a className="iconcss" href="" target="_blank">
+          <a className="iconcss" href="tel:201-794-4445" target="_blank">
             <i class="fas fa-phone"></i>
           </a>
 
 
-          <a className="iconcss" href="" target="_blank">
+          <a className="iconcss" href="https://twitter.com/RadburnLiquors" target="_blank">
+            <i className="fab fa-twitter fals"></i>
+          </a>
+
+          <a className="iconcss" href="https://www.yelp.com/biz/radburn-liquors-fair-lawn-2" target="_blank">
             <i className="fab fa-yelp fals"></i>
           </a>
 
-
-          <a className="iconcss" href="" target="_blank">
-            <i className="fab fa-twitter fals"></i>
-          </a>
 
 
         </div>
