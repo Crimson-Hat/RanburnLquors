@@ -41,7 +41,7 @@ class Winescard extends React.Component {
                       <span className="normalfont ">{this.props.Types}</span>
                     </div>
                     <div className="size pb-2 pl-2">
-                      <span className="boldtitle">Available in</span>
+                      <span className="boldtitle">Sizes</span>
                       <br />
                       <span className="normalfont">{this.props.Size}</span>
                     </div>
