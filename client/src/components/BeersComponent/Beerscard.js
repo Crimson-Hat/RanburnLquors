@@ -31,13 +31,13 @@ class Beerscard extends React.Component {
 
                   <div className="col-5 colinherit pl-3 mr-0">
                     <div className="country pb-2 pl-2">
-                      <span className="boldtitle">Origin/Type</span>
+                      <span className="boldtitle">Info</span>
                       <br />
                       <span className="normalfont">{this.props.BeerStyle}</span>
                       <br />
                       <span className="normalfont ">{this.props.AvailableSizes}</span>
                       <br />
-                      <span className="normalfont ">abv.{this.props.Abv}</span>
+                      <span className="normalfont ">{this.props.Abv}ABV</span>
                       <br />
                       {/* <span className="normalfont ">{this.props.Volume}</span>
                       <br />
