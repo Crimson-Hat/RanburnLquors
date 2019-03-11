@@ -23,10 +23,6 @@
   height: 30vh;
 }
 
-.backcarddescription {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
 
 .normalfont {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -73,7 +69,7 @@
 }
 
 @media only screen and (min-width: 1025px) {
-
+  
   /* For laptops: */
   .spiritsBoldTitle {
     font-size: 1.2em;
@@ -99,13 +95,19 @@
 }
 
 @media only screen and (min-width: 1025px) {
-
+  
   /* For laptops: */
   .spiritsCardContent {
     font-size: 1em;
   }
 }
 
+/* ----------------- */
+/* beersBackCardDescription */
+.beersBackCardDescription {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
 
 
 

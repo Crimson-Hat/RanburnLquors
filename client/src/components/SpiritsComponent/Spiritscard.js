@@ -53,7 +53,7 @@ class Spiritscard extends React.Component {
 
         </FrontSide>
 
-        <BackSide className="p-0 col-12">
+        <BackSide className="p-0 m-3 col-12">
           <div>
             <div className="card mx-auto">
               <div className="card-body m-0 p-0">
