@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import "./style.css";
-import SimpleSlider from './HompageComponent/Slickcarousell';
+// import SimpleSlider from './HompageComponent/Slickcarousell';
+
+import SimpleSlider2 from './HompageComponent/Slickcarousell';
+
 import Homepagediv2 from './HompageComponent/Homepagediv2';
 import Locationhours from './HompageComponent/Locationhours';
 
@@ -14,7 +17,9 @@ class Home extends Component {
         </div>
 
       
-        <SimpleSlider/>
+        {/* <SimpleSlider/> */}
+
+        <SimpleSlider2/>
               
         <Homepagediv2 />
 

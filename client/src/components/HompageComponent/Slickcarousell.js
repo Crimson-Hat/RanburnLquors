@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import Slider from "react-slick";
 import "./style.css";
 
 // import "./slick/slick.css";
 // import "./slick/slick-theme.css";
 
-import Slider from "react-slick";
 
 import One from "./CarouselImages/One.jpg";
 import Two from "./CarouselImages/Two.jpg";
