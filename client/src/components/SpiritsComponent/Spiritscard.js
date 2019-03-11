@@ -61,7 +61,7 @@ class Spiritscard extends React.Component {
                   {this.props.ProductName}
                 </div>
                 <div className="container-fluid row m-0 p-0">
-                  <div className="container-fluid text-left backcarddescription">
+                  <div className="container-fluid text-left spiritsBackCardDescription">
                     {this.props.Description}
                   </div>
                 </div>

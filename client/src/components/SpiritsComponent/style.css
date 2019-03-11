@@ -29,10 +29,6 @@
   height: 30vh;
 }
 
-.backcarddescription {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
 
 
 
@@ -111,7 +107,29 @@
   }
 }
 
+/* --------------------------- */
+/* spiritsBackCardDescription */
+.spiritsBackCardDescription {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 0.7em;
+}
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .spiritsBackCardDescription {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .spiritsBackCardDescription {
+    font-size: 0.85em;
+  }
+}
 
 
 
