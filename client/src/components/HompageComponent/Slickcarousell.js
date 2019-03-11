@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import Slider from "react-slick";
 import "./style.css";
 
 // import "./slick/slick.css";
 // import "./slick/slick-theme.css";
 
-import Slider from "react-slick";
 
 import One from "./CarouselImages/One.jpg";
 import Two from "./CarouselImages/Two.jpg";
@@ -21,7 +21,7 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed:4000,
       arrows: false,
       pauseOnHover: true,
       swipeToSlide: true,

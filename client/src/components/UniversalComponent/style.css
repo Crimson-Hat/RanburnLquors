@@ -30,13 +30,21 @@
   border-style: solid;
   border-width: 3px;
   border-radius: 15px;
+
+
+  
 }
 
 .active {
   background-color:  #5e1715;
-  /* border-radius: 10px; */
   border: none;
   color: white;
+  font-weight: bold;
+
+
+
+
+
 }
 
 .directory-links {

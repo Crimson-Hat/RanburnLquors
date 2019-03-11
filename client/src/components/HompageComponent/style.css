@@ -1,8 +1,11 @@
-.carouseloutterdiv {}
-
+.carouseloutterdiv {
+  /* height: 30vh; */
+}
+/* 
 .slick-track {
   display: flex !important;
-  /* height: 35vh; */
+  height: 35vh;
+  width: 1000px;
 
 }
 
@@ -14,7 +17,7 @@
 .imagefix {
   background-size: cover;
   height: inherit !important;
-}
+} */
 
 .headertitle {
   background-color: #5e1715;
@@ -168,7 +171,6 @@ a:hover {
 /* hourstitle */
 
 .hourstitle {
-  padding-top: 13%;
   font-size: 1em;
   font-weight: bold;
 }
