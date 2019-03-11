@@ -27,7 +27,7 @@ class Spiritscard extends React.Component {
 
                 <div className="container-fluid cardcontent row m-0 p-0">
 
-                  <div className="col-7 colinherit pl-3 mr-0">
+                  <div className="col-5 colinherit pl-3 mr-0">
                     <div className="country pb-2 pl-2">
                       <span className="boldtitle">Origin/Type</span>
                       <br />
@@ -43,7 +43,7 @@ class Spiritscard extends React.Component {
                     </div>
                   </div>
 
-                  <div className="container-fluid colinher  col-5 text-left p-0 m-0">
+                  <div className="container-fluid colinher  col-7 text-left p-0 m-0">
                     <img className="imgpropsspirits img-fluid" src={this.props.ImgUrl} alt={this.props.ProductName} />
                   </div>
                 </div>
