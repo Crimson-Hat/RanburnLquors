@@ -93,6 +93,23 @@ a:hover {
   text-align: center;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .about-radburn-title {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .about-radburn-title {
+    font-size: 2em;
+  }
+}
+
+
 /* ------------------------- */
 /* location fonts */
 

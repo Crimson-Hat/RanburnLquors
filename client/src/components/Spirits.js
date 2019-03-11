@@ -1,6 +1,7 @@
 import React from "react";
 import API from "../utils/API";
 import Spiritscard from "./SpiritsComponent/Spiritscard";
+import './style.css';
 
 
 
@@ -21,8 +22,8 @@ class Spirits extends React.Component {
     return (
       <React.Fragment>
 
-        <div className="headertitle headertitle1 text-center py-3">
-          Featured Spirits!
+        <div className="wineHeaderTitle wineHeaderTitle1 text-center py-3">
+          Featured Spirits
         </div>
 
         <div className="container-fluid row">

@@ -21,7 +21,7 @@ class Spiritscard extends React.Component {
           <div className="container-fluid p-0">
             <div className="card mx-auto">
               <div className="card-body p-0 m-0">
-                <div className="cardtitle mt-3 text-center">
+                <div className="spiritsCardTitle mt-3 text-center">
                   {this.props.ProductName}
                 </div>
 
@@ -29,17 +29,17 @@ class Spiritscard extends React.Component {
 
                   <div className="col-5 colinherit pl-3 mr-0">
                     <div className="country pb-2 pl-2">
-                      <span className="boldtitle">Origin/Type</span>
+                      <span className="spiritsBoldTitle">Info</span>
                       <br />
-                      <span className="normalfont">{this.props.Country}</span>
+                      <span className="spiritsNormalFont">{this.props.Country}</span>
                       <br />
-                      <span className="normalfont ">{this.props.Type}</span>
+                      <span className="spiritsNormalFont">{this.props.Type}</span>
                       <br />
-                      <span className="normalfont ">{this.props.SubType}</span>
+                      <span className="spiritsNormalFont">{this.props.SubType}</span>
                       <br />
-                      <span className="normalfont ">{this.props.Volume}</span>
+                      <span className="spiritsNormalFont">{this.props.Volume}</span>
                       <br />
-                      <span className="normalfont ">abv.{this.props.Abv}</span>
+                      <span className="spiritsNormalFont">{this.props.Abv}ABV</span>
                     </div>
                   </div>
 
@@ -57,7 +57,7 @@ class Spiritscard extends React.Component {
           <div>
             <div className="card mx-auto">
               <div className="card-body m-0 p-0">
-                <div className="cardtitle mt-3 text-center">
+                <div className="spiritsCardTitle mt-3 text-center">
                   {this.props.ProductName}
                 </div>
                 <div className="container-fluid row m-0 p-0">

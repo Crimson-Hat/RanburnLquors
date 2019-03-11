@@ -103,7 +103,7 @@ const spiritsSeed = [
   },
   {
     "ProductName": "Clontarf",
-    "Volume": "1000",
+    "Volume": "1000ml",
     "Abv": "40%",
     "Category": "Spirits",
     "Type": "Whiskey",
