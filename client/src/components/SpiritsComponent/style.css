@@ -1,51 +1,115 @@
 .card {
-  background-color:  #e7da91d8;
+  background-color: #e7da91d8;
   opacity: 0.98;
   border-radius: 50px;
   border-style: none;
   max-height: 100%;
-  }
-  .flipbody{
-    /* max-height: 300vh; */
-  }
-  .card-body {
-    /* min-height: 100%; */
-  
-  }
-  
-  .cardtitle {
-    font-size: 1.5em;
-    min-height: 5vh;
-    font-weight: bold;
-  }
-  
-  .cardcontent{
-    max-height: 30vh;
-    max-width: 100%;
-    }
-  
-  .colinherit {
+}
+
+.flipbody {
+  /* max-height: 300vh; */
+}
+
+.card-body {
+  /* min-height: 100%; */
+
+}
+
+
+.cardcontent {
+  max-height: 30vh;
+  max-width: 100%;
+}
+
+.colinherit {
   height: 100%;
-  }
-  
-  .imgpropsspirits {
-    height: 30vh;
-  }
-  
-  .backcarddescription {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-  }
-  
-  .boldtitle {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .normalfont {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imgpropsspirits {
+  height: 30vh;
+}
+
+.backcarddescription {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
+}
+
+
+
+
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
+/* spiritsCardTitle */
+.spiritsCardTitle {
+  font-size: 1.5em;
+  /* min-height: 5vh; */
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .spiritsCardTitle {
+    font-size: 1.5em;
   }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .spiritsCardTitle {
+    font-size: 1.46em;
+  }
+}
+
+/* --------------------------- */
+/* spiritsBoldTitle */
+.spiritsBoldTitle {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .spiritsBoldTitle {
+    font-size: 1.15em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .spiritsBoldTitle {
+    font-size: 1.2em;
+  }
+}
+
+/* --------------------------- */
+/* spiritsNormalFont */
+.spiritsNormalFont {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .spiritsNormalFont {
+    font-size: 0.95em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .spiritsNormalFont {
+    font-size: 1em;
+  }
+}
 
 
 
@@ -56,18 +120,18 @@
 
 
 
-
-
-
+/* --------------------------- */
+/* --------------------------- */
+/* --------------------------- */
 
 
 /* .card { */
-  /* background: #1e8a2e; */
-  /* background: #238b43;
+/* background: #1e8a2e; */
+/* background: #238b43;
     background: #5e1715;
     background: #5e1815; */
 
-  /* box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715;  */
+/* box-shadow: 0 2px 5px #5e1715, 0 2px 5px #5e1715;  */
 /* } */
 /* 
 .card-body {

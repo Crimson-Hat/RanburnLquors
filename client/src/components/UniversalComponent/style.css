@@ -33,7 +33,6 @@
 }
 
 .active {
-  font-weight: bold;
   background-color:  #5e1715;
   /* border-radius: 10px; */
   border: none;
