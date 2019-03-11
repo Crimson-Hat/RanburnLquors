@@ -25,7 +25,7 @@ class Wines extends React.Component {
     return (
       <React.Fragment>
         <div className="wineHeaderTitle wineHeaderTitle1 text-center py-3">
-          Featured Wines
+          Featured Wines  
         </div>
 
         <div className="container-fluid row">

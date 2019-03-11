@@ -20,7 +20,7 @@ function Locationhours() {
 
               <div className="container-fluid row text-center">
                 <div className="container addressdiv pt-2">
-                  3557,14-35 Plaza Road North <br />
+                  3557, 14-35 Plaza Road North <br />
                   Fair Lawn, NJ 07410<br />
                   United States<br />
                 </div>
