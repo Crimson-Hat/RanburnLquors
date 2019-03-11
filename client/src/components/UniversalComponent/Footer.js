@@ -21,10 +21,7 @@ function Footer() {
         </Link>
 
 
-        <div id="yelp-biz-badge-plain-frWrDW7toNHxu-iP6tUiUg"><a href="http://yelp.com/biz/radburn-liquors-fair-lawn-2?utm_medium=badge_button&amp;utm_source=biz_review_badge" target="_blank">Check out Radburn Liquors on Yelp</a></div>
-
         
-
 
 
       </div>
