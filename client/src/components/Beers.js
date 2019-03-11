@@ -32,9 +32,9 @@ class Beers extends React.Component {
                 <div className=" container-fluid col-sm-12 col-md-6 col-lg-3  my-2">
                   <Beerscard
                     BrandName={beers.BrandName}
-                    AvailableSizes={beers.AvailbleSizes}
+                    AvailableSizes={beers.AvailableSizes}
+                    BeerStyle={beers.BeerStyle}
                     ImgUrl={beers.ImgUrl}
-                    BeerStyle={beers.Types}
                     Abv={beers.Abv}
                     Description={beers.Description}
                   />
