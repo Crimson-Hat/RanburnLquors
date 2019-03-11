@@ -10,7 +10,7 @@ function AdminSpiritsForm2(props) {
         </div>
         <form>
 
-          <div className="form-group row mt-2">
+          <div className="form-group row mt-2 container-fluid mx-auto">
             <label htmlFor="nameUpdate" className="col-3">Name of item:</label>
             <div className="col-9">
 
@@ -24,7 +24,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="VolumeUpdate" className="col-3">Volume:</label>
             <div className="col-9">
 
@@ -36,7 +36,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="AbvUpdate" className="col-3">Abv:</label>
             <div className="col-9">
 
@@ -48,7 +48,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="CategoryUpdate" className="col-3">Category:</label>
             <div className="col-9">
 
@@ -59,7 +59,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="TypeUpdate" className="col-3">Type:</label>
             <div className="col-9">
 
@@ -71,7 +71,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="SubTypeUpdate" className="col-3">SubType:</label>
             <div className="col-9">
 
@@ -83,7 +83,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="CountryUpdate" className="col-3">Country:</label>
             <div className="col-9">
 
@@ -96,7 +96,7 @@ function AdminSpiritsForm2(props) {
           </div>
 
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="ImgUrlUpdate" className="col-3">ImgUrl:</label>
             <div className="col-9">
 
@@ -109,7 +109,7 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="DescriptionUpdate" className="col-3">Description:</label>
             <div className="col-9">
 
@@ -118,12 +118,16 @@ function AdminSpiritsForm2(props) {
             </div>
           </div>
 
-          <button className="btn-block"
+          <div className="container-fluid text-center my-2">
+          <button className="btn btn-success"
             onClick={props.handleDatabaseUpdate}
           >Update the database</button>
+          </div>
 
-          <button className="btn-block"
-            onClick={props.handleDatabaseDelete}>Delete item from the database</button>
+          <div className="container-fluid text-center my-4">
+          <button className="btn btn-danger"
+            onClick={props.handleDatabaseDelete}>Delete spirit from the database</button>
+          </div>
 
         </form>
       </div>

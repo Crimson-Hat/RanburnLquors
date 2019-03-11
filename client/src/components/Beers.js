@@ -21,8 +21,8 @@ class Beers extends React.Component {
     return (
       <React.Fragment>
 
-        <div className="headertitle headertitle1 text-center py-3">
-          Monthly Featured Beers!
+        <div className="wineHeaderTitle wineHeaderTitle1 text-center py-3">
+          Monthly Featured Beers
         </div>
 
         <div className="container-fluid row">

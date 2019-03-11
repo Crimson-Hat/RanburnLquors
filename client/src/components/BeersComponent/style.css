@@ -36,7 +36,7 @@
 
   /* For tablets: */
   .beersCardTitle {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
   }
 }
@@ -45,7 +45,7 @@
 
   /* For laptops: */
   .beersCardTitle {
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-weight: bold;
   }
 }
