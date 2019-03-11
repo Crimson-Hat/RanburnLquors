@@ -15,8 +15,7 @@ function Locationhours() {
           </div>
         </div>
         <div className="container-fluid row">
-          <div className="container-fluid col-sm-12 col-md-7">
-            <a href="https://www.google.com/maps/place/Radburn+Liquors/@40.9391914,-74.1203621,18z/data=!4m5!3m4!1s0x89c2fb7cf130a3c3:0x3e13939d0699936e!8m2!3d40.940084!4d-74.120078" target="_blank">
+          <div className="container-fluid col-sm-12 col-md-7 text-center">
 
               <div className="container-fluid row text-center">
                 <div className="container addressdiv pt-2">
@@ -25,6 +24,7 @@ function Locationhours() {
                   United States<br />
                 </div>
               </div>
+            <a href="https://www.google.com/maps/place/Radburn+Liquors/@40.9391914,-74.1203621,18z/data=!4m5!3m4!1s0x89c2fb7cf130a3c3:0x3e13939d0699936e!8m2!3d40.940084!4d-74.120078" target="_blank">
               <div className="container-fluid row">
                 <div className="container mapimagediv text-center">
                   <img className="mapimage img-fluid" src={Mapimage} alt="map image" />
@@ -33,7 +33,7 @@ function Locationhours() {
             </a>
 
           </div>
-          <div className="container-fluid col-sm-12 col-md-5">
+          <div className="container-fluid col-sm-12 col-md-5 text-center">
             <div className="container row">
               <div className="container hourstitle text-center">
                 Business Hours
