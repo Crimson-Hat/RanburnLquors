@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.css";
 
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import "./style.css";
 
 
 class Winescard extends React.Component {
@@ -23,11 +23,11 @@ class Winescard extends React.Component {
           <div className="container-fluid p-0">
             <div className="card mx-auto">
               <div className="card-body p-0 m-0">
-                <div className="cardtitle mt-3 text-center">
+                <div className="container-fluid mt-3 text-center winecardtitle">
                 {this.props.FamilyName}
                 </div>
 
-                <div className="container-fluid cardcontent row m-0 p-0">
+                <div className="container-fluid cardcontent row m-0 p-0 winecardcontent">
 
                   <div className="col-6 colinherit pl-3">
                     <div className="country pb-2 pl-2">

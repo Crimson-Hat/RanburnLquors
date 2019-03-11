@@ -13,10 +13,10 @@
 }
 
 
-.cardcontent {
+/* .cardcontent {
   max-height: 30vh;
   max-width: 100%;
-}
+} */
 
 .colinherit {
   height: 100%;
@@ -26,10 +26,6 @@
   height: 30vh;
 }
 
-.backcarddescription {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
 
 .boldtitle {
   font-weight: bold;
@@ -43,16 +39,16 @@
 
 /* ------------------- */
 
-.cardtitle {
+.winecardtitle {
   /* min-height: 5vh; */
   font-weight: bold;
-  font-size: 0.4em;
+  font-size: 0.8em;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  
+
   /* For tablets: */
-  .cardtitle {
+  .winecardtitle {
     font-size: 0.8em;
   }
 }
@@ -60,7 +56,52 @@
 @media only screen and (min-width: 1025px) {
 
   /* For laptops: */
-  .cardtitle {
-    font-size: 1em;
+  .winecardtitle {
+    font-size: 0.8em;
+  }
+}
+
+/* --------------- */
+.winecardcontent {
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .winecardcontent {
+    font-size: 0.4em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .winecardcontent {
+    font-size: 0.6em;
+  }
+}
+
+/* --------------- */
+
+.backcarddescription {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .backcarddescription {
+    font-size: 0.55em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .backcarddescription {
+    font-size: 0.8em;
   }
 }
