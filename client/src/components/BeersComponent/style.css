@@ -24,14 +24,10 @@
 }
 
 
-.normalfont {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
 
 /* -------------- */
-/* spiritsCardTitle */
-.spiritsCardTitle {
+/* beersCardTitle */
+.beersCardTitle {
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -39,22 +35,25 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
   /* For tablets: */
-  .spiritsCardTitle {
+  .beersCardTitle {
     font-size: 1.3em;
+    font-weight: bold;
   }
 }
 
 @media only screen and (min-width: 1025px) {
 
   /* For laptops: */
-  .spiritsCardTitle {
+  .beersCardTitle {
     font-size: 1.3em;
+    font-weight: bold;
   }
 }
+
 /* ---------------- */
 
-/* spiritsBoldTitle */
-.spiritsBoldTitle {
+/* beersBoldTitle */
+.beersBoldTitle {
   font-weight: bold;
   text-decoration: underline;
   font-size: 1.1em;
@@ -63,41 +62,41 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
   /* For tablets: */
-  .spiritsBoldTitle {
+  .beersBoldTitle {
     font-size: 1.15em;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  
+
   /* For laptops: */
-  .spiritsBoldTitle {
+  .beersBoldTitle {
     font-size: 1.2em;
   }
 }
 
 
 /* ---------------- */
-/* spiritsCardContent */
-.spiritsCardContent {
+/* beersCardContent */
+.beersCardContent {
   /* max-height: 30vh; */
   /* max-width: 100%; */
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 0.85em;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
   /* For tablets: */
-  .spiritsCardContent {
+  .beersCardContent {
     font-size: 0.9em;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  
+
   /* For laptops: */
-  .spiritsCardContent {
+  .beersCardContent {
     font-size: 1em;
   }
 }
@@ -107,11 +106,48 @@
 .beersBackCardDescription {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
+  /* For tablets: */
+  .beersBackCardDescription {
+    font-size: 1em;
+  }
+}
 
+@media only screen and (min-width: 1025px) {
 
+  /* For laptops: */
+  .beersBackCardDescription {
+    font-size: 1.05em;
+  }
+}
+
+/* ----------------- */
+/* beersNormalFont */
+.beersNormalFont {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .beersNormalFont {
+    font-size: 0.95em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .beersNormalFont {
+    font-size: 0.9em;
+  }
+}
 
 
 

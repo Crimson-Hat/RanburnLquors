@@ -23,21 +23,21 @@ class Beerscard extends React.Component {
           <div className="container-fluid p-0">
             <div className="card mx-auto">
               <div className="card-body p-0 m-0">
-                <div className="spiritsCardTitle mt-3 text-center">
+                <div className="beersCardTitle mt-3 text-center">
                 {this.props.BrandName}   
                 </div>
 
-                <div className="container-fluid spiritsCardContent row m-0 p-0">
+                <div className="container-fluid beersCardContent row m-0 p-0">
 
                   <div className="col-5 colinherit pl-3 mr-0">
                     <div className="country pb-2 pl-2">
-                      <span className="spiritsBoldTitle">Info</span>
+                      <span className="beersBoldTitle">Info</span>
                       <br />
-                      <span className="normalfont">{this.props.BeerStyle}</span>
+                      <span className="beersNormalFont">{this.props.BeerStyle}</span>
                       <br />
-                      <span className="normalfont ">{this.props.AvailableSizes}</span>
+                      <span className="beersNormalFont ">{this.props.AvailableSizes}</span>
                       <br />
-                      <span className="normalfont ">{this.props.Abv}ABV</span>
+                      <span className="beersNormalFont">{this.props.Abv}ABV</span>
                       <br />
                       {/* <span className="normalfont ">{this.props.Volume}</span>
                       <br />
