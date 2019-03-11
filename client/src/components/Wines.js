@@ -28,7 +28,7 @@ class Wines extends React.Component {
           Featured Wines  
         </div>
 
-        <div className="container-fluid row">
+        <div className="container-fluid winescard row">
           {!this.state.wines.length ? "" :
             (this.state.wines.map(wines => {
               return (

@@ -13,8 +13,9 @@ class Home extends Component {
         Radburn Liquors is your one-stop shop for quality wines, spirits, and beers!
         </div>
 
+      
         <SimpleSlider/>
-        
+              
         <Homepagediv2 />
 
         <Locationhours />
