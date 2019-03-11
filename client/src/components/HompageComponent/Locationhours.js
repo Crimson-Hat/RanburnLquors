@@ -17,11 +17,9 @@ function Locationhours() {
         <div className="container-fluid row mx-auto">
           <div className="container-fluid col-sm-12 col-md-7 mx-auto">
             <a href="https://www.google.com/maps/place/Radburn+Liquors/@40.9391914,-74.1203621,18z/data=!4m5!3m4!1s0x89c2fb7cf130a3c3:0x3e13939d0699936e!8m2!3d40.940084!4d-74.120078" target="_blank">
-
-
               <div className="container-fluid row mx-auto">
                 <div className="container mapimagediv text-center mx-auto">
-                  <img className="mapimage img-fluid mx-auto" src={Mapimage} alt="map image" />
+                  <img className="mapimage img-fluid" src={Mapimage} alt="map image" />
                 </div>
               </div>
             </a>
