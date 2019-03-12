@@ -12,7 +12,7 @@ function AdminWinesForm1(props) {
 
         <form>
 
-          <div className="form-group">
+          <div className="form-group container-fluid pb-2">
             <label htmlFor="wineUpdate">What Wine would you like to update? Or would you like to add a new one?</label>
             <select name="wineName" onChange={props.handleInputChange2}
               className="form-control" id="wineUpdate">

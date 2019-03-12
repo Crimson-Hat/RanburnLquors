@@ -30,7 +30,7 @@ class Disclaimer extends React.Component {
               </div>
 
               <div className="row">
-                <a className="designer-link" href="#" target="_blank">another link</a>
+                <a className="designer-link" href="#" target="_blank">gitHub</a>
               </div>
             </div>
 
@@ -48,11 +48,11 @@ class Disclaimer extends React.Component {
               </div>
 
               <div className="row">
-                <a className="designer-link" href="#" target="_blank">Portfolio</a>
+                <a className="designer-link" href="https://github.com/JordanMesibov" target="_blank">Portfolio</a>
               </div>
 
               <div className="row">
-                <a className="designer-link" href="#" target="_blank">another link</a>
+                <a className="designer-link" href="https://github.com/JordanMesibov" target="_blank">gitHub</a>
               </div>
             </div>
 
