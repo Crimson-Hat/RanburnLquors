@@ -5,19 +5,24 @@ import Two from "./CarouselImages/Two.jpg";
 import Three from "./CarouselImages/Three.jpg";
 import Four from "./CarouselImages/Four.jpg";
 import Five from "./CarouselImages/Five.jpg";
+import Six from "./CarouselImages/Six.jpg";
+import Seven from "./CarouselImages/Seven.jpg";
+import Eight from "./CarouselImages/Eight.jpg";
+
+
 export default class Car3 extends Component {
   render() {
     var settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       autoplay: true,
       autoplaySpeed:4000,
       arrows: false,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1080,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -43,7 +48,7 @@ export default class Car3 extends Component {
       ]
     };
     return (
-      <div>
+      <div className=".carouseloutterdiv">
         <Slider {...settings}>
           <div>
           <img className="img-fluid" src={One} alt="First slide" />
@@ -61,13 +66,13 @@ export default class Car3 extends Component {
           <img className="img-fluid" src={Five} alt="First slide" />
           </div>
           <div>
-            <h3>6</h3>
+          <img className="img-fluid" src={Six} alt="First slide" />
           </div>
           <div>
-            <h3>7</h3>
+          <img className="img-fluid" src={Seven} alt="First slide" />
           </div>
           <div>
-            <h3>8</h3>
+          <img className="img-fluid" src={Eight} alt="First slide" />
           </div>
         </Slider>
       </div>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./style.css";
 // import SimpleSlider from './HompageComponent/Slickcarousell';
 import Car3 from './HompageComponent/Car3';
-import SimpleSlider2 from './HompageComponent/Slickcarousell';
+// import SimpleSlider2 from './HompageComponent/Slickcarousell';
 
 
 import Homepagediv2 from './HompageComponent/Homepagediv2';
@@ -21,7 +21,7 @@ class Home extends Component {
         {/* <SimpleSlider/> */}
         <Car3 />
 
-        <SimpleSlider2/>
+        {/* <SimpleSlider2/> */}
               
         <Homepagediv2 />
 
