@@ -1,8 +1,9 @@
 .card {
   background-color: #e7da91d8;
-  opacity: 0.98;
-  border-radius: 50px;
+  border-radius: 35px;
   border-style: none;
+  color: #5e1715;
+  box-shadow: 0 15px 25px 0 rgb(0, 0, 0), 0 20px 40px 0 rgb(0, 0, 0);
 }
 
 .flipbody {
