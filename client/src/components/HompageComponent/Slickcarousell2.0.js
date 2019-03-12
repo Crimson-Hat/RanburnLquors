@@ -12,7 +12,7 @@ export default class SimpleSlider2 extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 4000,
       slidesToShow: 3,
       slidesToScroll: 3
     };

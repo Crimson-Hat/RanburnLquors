@@ -1,14 +1,15 @@
 .carouseloutterdiv {
-  /* height: 30vh; */
+  
+}
+
+.slick-track {
+  /* display: flex !important;
+  height: 35vh;
+  width: 1000px; */
+background-color: #5e1715;
+opacity: .93;
 }
 /* 
-.slick-track {
-  display: flex !important;
-  height: 35vh;
-  width: 1000px;
-
-}
-
 .slick-slide {
   background-size: cover;
   height: inherit !important;
@@ -17,7 +18,8 @@
 .imagefix {
   background-size: cover;
   height: inherit !important;
-} */
+}  */
+
 
 .headertitle {
   background-color: #5e1715;

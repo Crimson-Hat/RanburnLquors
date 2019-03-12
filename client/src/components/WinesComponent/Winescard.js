@@ -21,7 +21,7 @@ class Winescard extends React.Component {
 
         <FrontSide className="p-0 m-3 col-12">
           <div className="container-fluid p-0">
-            <div className="card mx-auto">
+            <div className="card cardwine mx-auto">
               <div className="card-body p-0 m-0">
                 <div className="container-fluid mt-3 text-center winecardtitle">
                 {this.props.FamilyName}
