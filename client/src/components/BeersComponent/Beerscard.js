@@ -62,7 +62,7 @@ class Beerscard extends React.Component {
             <div className="card mx-auto">
               <div className="card-body m-0 p-0">
                 <div className="beersCardTitle mt-3 text-center">
-                  {this.props.ProductName}
+                  {this.props.BrandName}
                 </div>
                 <div className="container-fluid row m-0 p-0">
                   <div className="container-fluid text-left beersBackCardDescription">

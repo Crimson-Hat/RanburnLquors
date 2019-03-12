@@ -29,7 +29,7 @@ class Beers extends React.Component {
           {!this.state.beers.length ? "" :
             (this.state.beers.map(beers => {
               return (
-                <div className=" container-fluid col-sm-12 col-md-6 col-lg-3  my-2">
+                <div className="container-fluid col-sm-12 col-md-6 col-lg-3  my-2">
                   <Beerscard
                     BrandName={beers.BrandName}
                     AvailableSizes={beers.AvailableSizes}
