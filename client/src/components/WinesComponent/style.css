@@ -72,7 +72,7 @@
 
   /* For tablets: */
   .winecardcontent {
-    font-size: 0.59em;
+    font-size: 0.49em;
   }
 }
 
@@ -80,7 +80,7 @@
 
   /* For laptops: */
   .winecardcontent {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -96,7 +96,7 @@
 
   /* For tablets: */
   .backcarddescription {
-    font-size: 0.6em;
+    font-size: 0.56em;
   }
 }
 
@@ -104,6 +104,6 @@
 
   /* For laptops: */
   .backcarddescription {
-    font-size: 0.9em;
+    font-size: 0.83em;
   }
 }
