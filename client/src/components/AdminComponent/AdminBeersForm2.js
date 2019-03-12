@@ -10,8 +10,8 @@ function AdminBeersForm2(props) {
         </div>
         <form>
 
-          <div className="form-group row mt-2">
-            <label htmlFor="brandNameUpdate" className="col-3">BrandName:</label>
+          <div className="form-group row mt-2 container-fluid mx-auto">
+            <label htmlFor="brandNameUpdate" className="col-3">Brand Name:</label>
             <div className="col-9">
 
               <textarea
@@ -24,8 +24,8 @@ function AdminBeersForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
-            <label htmlFor="AvailableSizesUpdate" className="col-3">AvailableSizes:</label>
+          <div className="form-group row container-fluid mx-auto">
+            <label htmlFor="AvailableSizesUpdate" className="col-3">Available Sizes:</label>
             <div className="col-9">
 
               <textarea className="form-control"
@@ -37,8 +37,8 @@ function AdminBeersForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
-            <label htmlFor="BeerStyleUpdate" className="col-3">BeerStyle:</label>
+          <div className="form-group row container-fluid mx-auto">
+            <label htmlFor="BeerStyleUpdate" className="col-3">Beer Style:</label>
             <div className="col-9">
 
               <textarea className="form-control"
@@ -50,7 +50,7 @@ function AdminBeersForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="AbvUpdate" className="col-3">Abv:</label>
             <div className="col-9">
 
@@ -64,7 +64,7 @@ function AdminBeersForm2(props) {
           </div>
 
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="ImgUrlUpdate" className="col-3">ImgUrl:</label>
             <div className="col-9">
 
@@ -77,7 +77,7 @@ function AdminBeersForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="DescriptionUpdate" className="col-3">Description:</label>
             <div className="col-9">
 
@@ -90,11 +90,15 @@ function AdminBeersForm2(props) {
             </div>
           </div>
 
-          <button className="btn-block"
+          <div className="container-fluid text-center my-2">
+          <button className="btn btn-success"
             onClick={props.handleDatabaseUpdate3}>Update the database</button>
+          </div>
 
-          <button className="btn-block"
+          <div className="container-fluid text-center my-4">
+          <button className="btn btn-danger"
             onClick={props.handleDatabaseDelete3}>Delete beer from the database</button>
+          </div>
 
 
         </form>

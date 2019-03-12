@@ -10,8 +10,8 @@ function AdminWinesForm2(props) {
         </div>
         <form>
 
-          <div className="form-group row mt-2">
-            <label htmlFor="familyUpdate" className="col-3">Name/Family of wine:</label>
+          <div className="form-group row mt-2 container-fluid mx-auto">
+            <label htmlFor="familyUpdate" className="col-3">Name/Family:</label>
             <div className="col-9">
 
               <textarea
@@ -24,7 +24,7 @@ function AdminWinesForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="CountryUpdate" className="col-3">Country:</label>
             <div className="col-9">
 
@@ -37,7 +37,7 @@ function AdminWinesForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="SizeUpdate" className="col-3">Size:</label>
             <div className="col-9">
 
@@ -50,7 +50,7 @@ function AdminWinesForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="TypesUpdate" className="col-3">Types:</label>
             <div className="col-9">
 
@@ -63,7 +63,7 @@ function AdminWinesForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="ImgUrlUpdate" className="col-3">ImgUrl:</label>
             <div className="col-9">
 
@@ -76,7 +76,7 @@ function AdminWinesForm2(props) {
             </div>
           </div>
 
-          <div className="form-group row">
+          <div className="form-group row container-fluid mx-auto">
             <label htmlFor="DescriptionUpdate" className="col-3">Description:</label>
             <div className="col-9">
 
@@ -89,12 +89,15 @@ function AdminWinesForm2(props) {
             </div>
           </div>
 
-
-          <button className="btn-block"
+          <div className="container-fluid text-center my-2">
+          <button className="btn btn-success"
             onClick={props.handleDatabaseUpdate2}>Update the database</button>
+          </div>
 
-          <button className="btn-block"
+          <div className="container-fluid text-center my-4">
+          <button className="btn btn-danger"
             onClick={props.handleDatabaseDelete2}>Delete wine from the database</button>
+          </div>
 
 
         </form>

@@ -338,7 +338,7 @@ class Admin extends React.Component {
               <div className="col-4">
                 {/* <h1 className="title">Wines</h1> */}
                 <AdminWinesForm1 handleInputChange2={this.handleWineSelect} wines={this.state.wines} />
-                <h1>Add the preview wine card below here</h1>
+                {/* <h1>Add the preview wine card here</h1> */}
               </div>
 
               <div className="col-8">
@@ -355,7 +355,7 @@ class Admin extends React.Component {
             <div className="row container-fluid ">
               <div className="col-4">
                 <AdminSpiritsForm1 handleInputChange={this.handleDealSelect} deals={this.state.deals} />
-                <h1>Add the preview card below here</h1>
+                {/* <h1>Add the preview spirit card here</h1> */}
               </div>
               <div className="col-8">
                 <AdminSpiritsForm2 chosenItem={this.state.chosenItem} handleInputChange={this.handleFormEditChange} handleDatabaseUpdate={this.handleDatabaseUpdate} handleDatabaseDelete={this.handleDatabaseDelete} />
@@ -370,7 +370,7 @@ class Admin extends React.Component {
               </div>
               <div className="col-4">
                 <AdminBeersForm1 handleInputChange3={this.handleBeerSelect} beers={this.state.beers} />
-                <h1>Add the preview beer card below here</h1>
+                {/* <h1>Add the preview beer card here</h1> */}
               </div>
 
               <div className="col-8">

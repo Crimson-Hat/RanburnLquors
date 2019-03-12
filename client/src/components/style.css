@@ -28,16 +28,12 @@
   opacity: 0.92;
 }
 
-.designerbody {
-
-}
-
 .designer-link {
   color: white;
 }
 
 .designer-link:hover {
-  color: #c9bc70;
+  color: #e6d67d;
 }
 
 /* .contact-p {
@@ -72,7 +68,7 @@
 
   /* For laptops: */
   .wineHeaderTitle1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
@@ -107,3 +103,5 @@
   }
 }
 
+/* -------------- */
+/* admin page stuff */
