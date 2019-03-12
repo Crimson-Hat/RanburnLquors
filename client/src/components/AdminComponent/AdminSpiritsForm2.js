@@ -11,7 +11,7 @@ function AdminSpiritsForm2(props) {
         <form>
 
           <div className="form-group row mt-2 container-fluid mx-auto">
-            <label htmlFor="nameUpdate" className="col-3">Name of item:</label>
+            <label htmlFor="nameUpdate" className="col-3">Name:</label>
             <div className="col-9">
 
               <textarea

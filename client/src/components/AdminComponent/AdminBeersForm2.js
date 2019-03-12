@@ -11,7 +11,7 @@ function AdminBeersForm2(props) {
         <form>
 
           <div className="form-group row mt-2 container-fluid mx-auto">
-            <label htmlFor="brandNameUpdate" className="col-3">BrandName:</label>
+            <label htmlFor="brandNameUpdate" className="col-3">Brand Name:</label>
             <div className="col-9">
 
               <textarea
@@ -25,7 +25,7 @@ function AdminBeersForm2(props) {
           </div>
 
           <div className="form-group row container-fluid mx-auto">
-            <label htmlFor="AvailableSizesUpdate" className="col-3">AvailableSizes:</label>
+            <label htmlFor="AvailableSizesUpdate" className="col-3">Available Sizes:</label>
             <div className="col-9">
 
               <textarea className="form-control"
@@ -38,7 +38,7 @@ function AdminBeersForm2(props) {
           </div>
 
           <div className="form-group row container-fluid mx-auto">
-            <label htmlFor="BeerStyleUpdate" className="col-3">BeerStyle:</label>
+            <label htmlFor="BeerStyleUpdate" className="col-3">Beer Style:</label>
             <div className="col-9">
 
               <textarea className="form-control"

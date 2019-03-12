@@ -11,7 +11,7 @@ function AdminWinesForm2(props) {
         <form>
 
           <div className="form-group row mt-2 container-fluid mx-auto">
-            <label htmlFor="familyUpdate" className="col-3">Name/Family of wine:</label>
+            <label htmlFor="familyUpdate" className="col-3">Name/Family:</label>
             <div className="col-9">
 
               <textarea
