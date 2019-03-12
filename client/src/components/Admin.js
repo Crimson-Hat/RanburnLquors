@@ -350,7 +350,9 @@ class Admin extends React.Component {
 
 
             <div className="row container-fluid headingbar my-2">
+            <div className="container-fluid text-center">
               <h1>Spirits Page Editor</h1>
+              </div>
             </div>
             <div className="row container-fluid ">
               <div className="col-4">
@@ -366,7 +368,9 @@ class Admin extends React.Component {
 
             <div className="row container-fluid m-0 p-0">
               <div className="row container-fluid headingbar my-2">
+              <div className="container-fluid text-center">
                 <h1>Beers Page Editor</h1>
+              </div>
               </div>
               <div className="col-4">
                 <AdminBeersForm1 handleInputChange3={this.handleBeerSelect} beers={this.state.beers} />

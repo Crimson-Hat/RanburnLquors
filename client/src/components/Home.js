@@ -12,7 +12,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="homeHeaderTitle homeHeaderTitle1 text-center py-3">
+        <div className="homeHeaderTitle homeHeaderTitle1 text-center py-2">
         Radburn Liquors is your one-stop shop for quality wines, spirits, and beers!
         </div>
 

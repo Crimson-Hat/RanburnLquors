@@ -121,12 +121,12 @@ function AdminSpiritsForm2(props) {
           <div className="container-fluid text-center my-2">
           <button className="btn btn-success"
             onClick={props.handleDatabaseUpdate}
-          >Update the database</button>
+          >Update spirit</button>
           </div>
 
           <div className="container-fluid text-center my-4">
           <button className="btn btn-danger"
-            onClick={props.handleDatabaseDelete}>Delete spirit from the database</button>
+            onClick={props.handleDatabaseDelete}>Delete spirit</button>
           </div>
 
         </form>

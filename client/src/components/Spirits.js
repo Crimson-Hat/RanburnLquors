@@ -22,7 +22,7 @@ class Spirits extends React.Component {
     return (
       <React.Fragment>
 
-        <div className="wineHeaderTitle wineHeaderTitle1 text-center py-3">
+        <div className="wineHeaderTitle wineHeaderTitle1 text-center py-2">
           Featured Spirits
         </div>
 
