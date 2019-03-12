@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import "./style.css";
 // import SimpleSlider from './HompageComponent/Slickcarousell';
-
+import Car3 from './HompageComponent/Car3';
 import SimpleSlider2 from './HompageComponent/Slickcarousell';
+
 
 import Homepagediv2 from './HompageComponent/Homepagediv2';
 import Locationhours from './HompageComponent/Locationhours';
@@ -18,6 +19,7 @@ class Home extends Component {
 
       
         {/* <SimpleSlider/> */}
+        <Car3 />
 
         <SimpleSlider2/>
               

@@ -9,17 +9,18 @@ export default class Car3 extends Component {
   render() {
     var settings = {
       dots: true,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 4,
-      initialSlide: 0,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      autoplay: true,
+      autoplaySpeed:4000,
+      arrows: false,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
@@ -27,9 +28,9 @@ export default class Car3 extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         },
         {
@@ -43,7 +44,6 @@ export default class Car3 extends Component {
     };
     return (
       <div>
-        <h2> Responsive </h2>
         <Slider {...settings}>
           <div>
           <img className="img-fluid" src={One} alt="First slide" />
