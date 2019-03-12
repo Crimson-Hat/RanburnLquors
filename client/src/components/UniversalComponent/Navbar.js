@@ -18,38 +18,43 @@ function NavBar() {
 
       {/* NavLinks Line */}
       <div className="row container-fluid pb-2 px-0 m-auto">
-        <div className="container-fluid col-sm-1 col-md-3 p-0 m-0 text-center">
+        <div className="container-fluid col-sm-1 col-md-3 p-0 m-0 ">
         </div>
-        <div className="row container-fluid col-sm-10 col-md-6 p-0 m-0 text-center directory-links">
-          <div className="col-4 text-center">
-            <NavLink
-              style={{ textDecoration: 'none', color: '#5e1715' }}
-              to='/wines'
-              className="tags px-2"
-              activeStyle={{ color: 'white' }}>
-              Wines
+        <div className="row container-fluid col-sm-10 col-md-6 p-0 m-0 directory-links">
+        <div className="container-fluid m-0 p-0">
+          <div className="d-flex justify-content-between p-1">
+            <div className="">
+              <NavLink
+                style={{ textDecoration: 'none', color: '#5e1715' }}
+                to='/wines'
+                className="tags px-2"
+                activeStyle={{ color: 'white' }}>
+                Wines
           </NavLink>
-          </div>
-          <div className="col-4 text-center">
-            <NavLink
-              style={{ textDecoration: 'none', color: '#5e1715' }}
-              to='/spirits'
-              className="tags px-2"
-              activeStyle={{ color: 'white' }}>
-              Spirits
+            </div >
+            <div className="mx-1">
+              <NavLink
+                style={{ textDecoration: 'none', color: '#5e1715' }}
+                to='/spirits'
+                className="tags px-2"
+                activeStyle={{ color: 'white' }}>
+                Spirits
           </NavLink>
-          </div>
-          <div className="col-4 text-center">
-            <NavLink
-              style={{ textDecoration: 'none', color: '#5e1715' }}
-              to='/beers'
-              className="tags px-2"
-              activeStyle={{ color: 'white' }}>
-              Beers
+            </div>
+            <div className="">
+              <NavLink
+                style={{ textDecoration: 'none', color: '#5e1715' }}
+                to='/beers'
+                className="tags px-2"
+                activeStyle={{ color: 'white' }}>
+                Beers
             </NavLink>
+            </div>
           </div>
         </div>
-        <div className="container col-sm-1 col-md-3 text-center">
+</div>
+
+        <div className="container col-sm-1 col-md-3">
           {/* <Link
         style={{ textDecoration: 'none', color: 'black' }} 
         to="/admin"
