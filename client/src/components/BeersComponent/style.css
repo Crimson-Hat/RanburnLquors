@@ -106,7 +106,7 @@
 .beersBackCardDescription {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -121,7 +121,7 @@
 
   /* For laptops: */
   .beersBackCardDescription {
-    font-size: 1.05em;
+    font-size: 0.8em;
   }
 }
 
