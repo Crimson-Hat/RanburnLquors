@@ -92,12 +92,12 @@ function AdminBeersForm2(props) {
 
           <div className="container-fluid text-center my-2">
           <button className="btn btn-success"
-            onClick={props.handleDatabaseUpdate3}>Update the database</button>
+            onClick={props.handleDatabaseUpdate3}>Update beer</button>
           </div>
 
           <div className="container-fluid text-center my-4">
           <button className="btn btn-danger"
-            onClick={props.handleDatabaseDelete3}>Delete beer from the database</button>
+            onClick={props.handleDatabaseDelete3}>Delete beer</button>
           </div>
 
 

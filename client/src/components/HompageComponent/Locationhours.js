@@ -9,7 +9,7 @@ function Locationhours() {
     <React.Fragment>
       <div className="locationmaster container-fluid pb-3 mx-auto">
 
-        <div className="row container-fluid pt-2 mx-auto">
+        <div className="row container-fluid py-2 mx-auto">
           <div className="container locationtitle text-center mx-auto">
             Location & Hours
           </div>
@@ -26,11 +26,12 @@ function Locationhours() {
 
           </div>
           <div className="container-fluid col-sm-12 col-md-5">
-            <div className="container-fluid row text-center mx-auto">
-              <div className="container addressdiv pt-1">
+            <div className="container-fluid row text-center mx-auto px-0">
+              <div className="container addressdiv pt-1 px-0">
                 3557, 14-35 Plaza Road North <br />
                 Fair Lawn, NJ 07410<br />
                 United States<br />
+                (201) 794-4445
               </div>
             </div>
             <div className="container row mx-auto">

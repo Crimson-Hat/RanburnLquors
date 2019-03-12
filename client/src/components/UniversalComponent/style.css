@@ -59,6 +59,7 @@
   /* background-color: #751b18; */
   background-color:  #5e1715;
   color: white;
+  height: 7vh;
   /* opacity: .93; */
 }
 
@@ -79,6 +80,45 @@
 .iconcss:hover{
   /* font-size: 1.8em; */
   color: #e6d67d;
-
- 
 }
+
+/* -------------------- */
+/* -------------------- */
+/* -------------------- */
+
+
+/* -------------------- */
+/* mobile: */
+.logoimg {
+  width: 40vw;
+  /* height: 20vh; */
+}
+
+
+/* -------------------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* For tablets: */
+  .logoimg {
+    width: 20vw;
+    /* height: 20vh; */
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* For laptops: */
+  .logoimg {
+    width: 20vw;
+    /* height: 20vh; */
+  }
+}
+
+
+
+
+
+
+
+
+
