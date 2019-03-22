@@ -1,8 +1,4 @@
 # RadburnLiquors
-
-## Heroku Deployed Link
-https://radburnliquors.herokuapp.com/
-
 The RadburnLiquors project is a MERN (MongoDB, Express, React, Nodejs) stack web application designed for a liquor store. Some of the key features of the web are responsive design, content management system on the front-end of the website, RESTful API integration and user authentication on the admin page which gives exclusive rights to the admin/authenticated user to change content on website. Content management system takes in user-input on the front-end and leverages Mongoose in the backend to read/write/delete data from MongoDB. 
 <br />
 ● Front-End: CSS, HTML, JavaScript, React, and Bootstrap
@@ -14,8 +10,9 @@ The RadburnLiquors project is a MERN (MongoDB, Express, React, Nodejs) stack web
 ● Project Management: Git, Git Bash
 <br />
 ● Deployment Details: Heroku, Google domains
-<br />
 
+## Heroku Deployed Link
+https://radburnliquors.herokuapp.com/
 ## PowerPoint
 https://docs.google.com/presentation/d/1qq0iSxw73ijf5iUaoYl6PXsmfbvk6QYA36kbpfnvg2k/edit
 <br />
